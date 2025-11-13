@@ -252,3 +252,15 @@ Based on the visualization findings, potential features to consider:
    - Current analysis treats as simple random sample
    - **Solution:** Incorporate survey weights (WTINT2YR, WTMEC2YR) for population-representative estimates if needed
 
+---
+
+## Modeling Approach
+
+This project is well-suited for **binary classification** models, as both target variables (`Has_Diabetes` and `Has_Hypertension`) are binary outcomes (0 = no disease, 1 = disease present). Regression models would not be appropriate here since we are predicting discrete disease states rather than continuous values.
+
+**Primary Goals:**
+1. **Predictive Modeling**: Build classification models to predict diabetes and hypertension risk based on modifiable risk factors (BMI, physical activity, diet, smoking, socioeconomic status) and demographic variables.
+
+2. **Feature Importance Analysis**: Identify which risk factors are most strongly associated with disease outcomes overall and within each racial/ethnic group. This will help prioritize which interventions would have the largest impact for each population.
+
+3. **Population-Specific Insights**: Determine whether optimal prevention strategies differ across racial/ethnic groups by comparing feature importance and model performance across subgroups. This addresses the question of whether one-size-fits-all prevention approaches are appropriate or if tailored strategies are needed.
