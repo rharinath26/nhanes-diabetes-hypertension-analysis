@@ -138,9 +138,9 @@ The combination of these factors provides a comprehensive picture of both biolog
 
 1. **Ethnic disparities in diabetes prevalence** seem to exist. Non-Hispanic Black adults report diabetes at 12.4% while other groups cluster between ~7% and ~10%. These gaps are visible in the race-specific bar charts (`visualizations/1_disease_prevalence_by_race.png`) and all the race-stratified panels (`visualizations/7a_bmi_by_race_diabetes.png`, `visualizations/8_age_stratified_by_race.png`, `visualizations/9a_diabetes_risk_factors_by_race.png`).
 
-2. **Hypertension disparities are even larger**: Non-Hispanic Black participants report hypertension at 44.3%, ahead of other groups by 8%–20%. See the hypertension bars in `visualizations/1_disease_prevalence_by_race.png` and `visualizations/8_age_stratified_by_race.png`.
- d
-3. **BMI is a strong predictor of diabetes and hypertension risk**: Average BMI is significantly greater for diabetics than non-diabetics (33.0 kg/m²  vs. 26.4 kg/m² on average). The BMI distribution plots (`visualizations/3a_bmi_by_diabetes.png`, `visualizations/3b_bmi_by_hypertension.png`) and the race-by-BMI boxplots (`visualizations/7a_bmi_by_race_diabetes.png`, `visualizations/7a_bmi_by_race_hypertension.png`) highlight this pattern.
+2. **Hypertension disparities are even larger**: Non-Hispanic Black participants report hypertension at 44.3%, ahead of other groups by 8%–20%. See the hypertension bars in `visualizations/1_disease_prevalence_by_race.png`, `visualizations/7b_bmi_by_race_hypertension.png`, and `visualizations/8_age_stratified_by_race.png`.
+
+3. **BMI is a strong predictor of diabetes and hypertension risk**: Average BMI is significantly greater for diabetics than non-diabetics, and the same pattern holds for hypertension. The BMI distribution plots (`visualizations/3a_bmi_by_diabetes.png`, `visualizations/3b_bmi_by_hypertension.png`) and the race-by-BMI boxplots (`visualizations/7a_bmi_by_race_diabetes.png`, `visualizations/7b_bmi_by_race_hypertension.png`) highlight this pattern for both diseases.
 
 4. **Age is a strong predictor of diabetes and hypertension risk**: Mean age 63.1 years among diabetics vs. 35.9 years among non-diabetics. The prevalence curves in `visualizations/4_age_trends.png` show diabetes and hypertension rising sharply with age.
 
