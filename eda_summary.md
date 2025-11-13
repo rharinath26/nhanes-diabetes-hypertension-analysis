@@ -136,19 +136,19 @@ The combination of these factors provides a comprehensive picture of both biolog
 
 ### Key Signals and Insights (with Visual References)
 
-1. **Ethnic disparities in diabetes prevalence** seem to exist. Non-Hispanic Black adults report diabetes at 12.4% while other groups cluster between ~7% and ~10%. These gaps are visible in the race-specific bar charts (`visualizations/1_disease_prevalence_by_race.png`) and all the race-stratified panels (`visualizations/7_bmi_by_race_diabetes.png`, `visualizations/8_age_stratified_by_race.png`, `visualizations/9_risk_factors_by_race.png`).
+1. **Ethnic disparities in diabetes prevalence** seem to exist. Non-Hispanic Black adults report diabetes at 12.4% while other groups cluster between ~7% and ~10%. These gaps are visible in the race-specific bar charts (`visualizations/1_disease_prevalence_by_race.png`) and all the race-stratified panels (`visualizations/7a_bmi_by_race_diabetes.png`, `visualizations/8_age_stratified_by_race.png`, `visualizations/9a_diabetes_risk_factors_by_race.png`).
 
 2. **Hypertension disparities are even larger**: Non-Hispanic Black participants report hypertension at 44.3%, ahead of other groups by 8%–20%. See the hypertension bars in `visualizations/1_disease_prevalence_by_race.png` and `visualizations/8_age_stratified_by_race.png`.
-
-3. **BMI is a strong predictor of diabetes risk**: Average BMI is significantly greater for diabetics than non-diabetics (33.0 kg/m²  vs. 26.4 kg/m² on average). The BMI distribution plots (`visualizations/3_bmi_by_diabetes.png`) and the race-by-BMI boxplots (`visualizations/7_bmi_by_race_diabetes.png`) highlight this pattern.
+ d
+3. **BMI is a strong predictor of diabetes and hypertension risk**: Average BMI is significantly greater for diabetics than non-diabetics (33.0 kg/m²  vs. 26.4 kg/m² on average). The BMI distribution plots (`visualizations/3a_bmi_by_diabetes.png`, `visualizations/3b_bmi_by_hypertension.png`) and the race-by-BMI boxplots (`visualizations/7a_bmi_by_race_diabetes.png`, `visualizations/7a_bmi_by_race_hypertension.png`) highlight this pattern.
 
 4. **Age is a strong predictor of diabetes and hypertension risk**: Mean age 63.1 years among diabetics vs. 35.9 years among non-diabetics. The prevalence curves in `visualizations/4_age_trends.png` show diabetes and hypertension rising sharply with age.
 
-5. **Physical activity findings require caution**: Higher reported activity is associated with higher diabetes prevalence, likely reflecting reverse causality or confounding. This is shown in `visualizations/6_lifestyle_factors.png` and `visualizations/9_risk_factors_by_race.png`.
+5. **Physical activity findings require caution**: Higher reported activity is associated with higher diabetes and hypertension prevalence, likely reflecting reverse causality or confounding. This is shown in `visualizations/6_lifestyle_factors.png`, `visualizations/9a_diabetes_risk_factors_by_race.png`, and `visualizations/9b_hypertension_risk_factors_by_race.png`.
 
-6. **Smoking is a clear intervention target**: Diabetes prevalence is 17.4% among ever-smokers versus 11.1% among never-smokers. See the smoking panels in `visualizations/6_lifestyle_factors.png`.
+6. **Smoking is a clear intervention target**: Diabetes and hypertension prevalence is significantly greater among ever-smokers compared to never-smokers. See the smoking panels in `visualizations/6_lifestyle_factors.png`.
 
-7. **Race-stratified lifestyle patterns**: Plots in `visualizations/9_risk_factors_by_race.png` and `visualizations/9b_hypertension_risk_factors_by_race.png` show that ever-smokers have consistently higher diabetes and hypertension rates. Obesity also dramatically amplifies diabetes risk in every race (with Non-Hispanic Black obese participants exceeding 20%). There does not appear to be a clear trend for neither physical activity nor income vs diabetes or hypertension rate when analyzing different races. Non-Hispanic Black people tend to have the higheest rates of diabetes and hypertension across all these categories overall.
+7. **Race-stratified lifestyle patterns**: Plots in `visualizations/9a_diabetes_risk_factors_by_race.png` and `visualizations/9b_hypertension_risk_factors_by_race.png` show that ever-smokers have consistently higher diabetes and hypertension rates. Obesity also dramatically amplifies diabetes risk in every race (with Non-Hispanic Black obese participants exceeding 20%). There does not appear to be a clear trend for neither physical activity nor income vs diabetes or hypertension rate when analyzing different races. Non-Hispanic Black people tend to have the higheest rates of diabetes and hypertension across all these categories overall.
 
 8. **Dietary patterns show nuanced associations**—decile plots reveal a U-shaped relationship between calories and diabetes prevalence (lowest risk around 1,500–2,500 kcal/day) and a steady upward trend in hypertension prevalence as sodium intake increases (rising from ~28% in the lowest decile to >32% in the highest). See `visualizations/10_dietary_risk_patterns.png` for the decile trends.
 
@@ -162,25 +162,34 @@ The combination of these factors provides a comprehensive picture of both biolog
 #### 2. Correlation Heatmap of Risk Factors
 ![Correlation heatmap](visualizations/2_correlation_heatmap.png)
 
-#### 3. BMI Distributions by Diabetes Status
-![BMI by diabetes status](visualizations/3_bmi_by_diabetes.png)
+#### 3A. BMI Distributions by Diabetes Status
+![BMI by diabetes status](visualizations/3a_bmi_by_diabetes.png)
+
+#### 3B. BMI Distributions by Hypertension Status
+![BMI by hypertension status](visualizations/3b_bmi_by_hypertension.png)
 
 #### 4. Age Trends for Diabetes and Hypertension
 ![Age trends](visualizations/4_age_trends.png)
 
-#### 5. Lifestyle Factors by Disease Status
+#### 5. Missing Data Patterns
+![Missing data patterns](visualizations/5_missing_data.png)
+
+#### 6. Lifestyle Factors by Disease Status
 ![Lifestyle factors](visualizations/6_lifestyle_factors.png)
 
-#### 6. BMI by Race and Diabetes Status
-![BMI by race and diabetes status](visualizations/7_bmi_by_race_diabetes.png)
+#### 7A. BMI by Race and Diabetes Status
+![BMI by race and diabetes status](visualizations/7a_bmi_by_race_diabetes.png)
 
-#### 7. Age-Stratified Disease Rates by Race
+#### 7B. BMI by Race and Hypertension Status
+![BMI by race and hypertension status](visualizations/7b_bmi_by_race_hypertension.png)
+
+#### 8. Age-Stratified Disease Rates by Race
 ![Age-stratified disease rates](visualizations/8_age_stratified_by_race.png)
 
-#### 8. Diabetes Race-Stratified Lifestyle Interactions
-![Risk factor interactions by race](visualizations/9_risk_factors_by_race.png)
+#### 9A. Diabetes Race-Stratified Lifestyle Interactions
+![Risk factor interactions by race](visualizations/9a_diabetes_risk_factors_by_race.png)
 
-#### 9. Hypertension Race-Stratified Lifestyle Interactions
+#### 9B. Hypertension Race-Stratified Lifestyle Interactions
 ![Risk factor interactions by race](visualizations/9b_hypertension_risk_factors_by_race.png)
 
 #### 10. Dietary Risk Patterns (Calories & Sodium)

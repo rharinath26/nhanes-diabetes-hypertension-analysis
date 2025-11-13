@@ -593,7 +593,7 @@ plt.savefig(os.path.join(output_dir, '2_correlation_heatmap.png'), dpi=300, bbox
 print(f"  Saved: {output_dir}/2_correlation_heatmap.png")
 plt.close()
 
-print("Creating Visualization 3: BMI Distribution by Diabetes Status")
+print("Creating Visualization 3A: BMI Distribution by Diabetes Status")
 
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
 
@@ -625,8 +625,45 @@ ax2.axhline(y=30, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label='
 ax2.legend(fontsize=9)
 
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, '3_bmi_by_diabetes.png'), dpi=300, bbox_inches='tight')
-print(f"  Saved: {output_dir}/3_bmi_by_diabetes.png")
+plt.savefig(os.path.join(output_dir, '3a_bmi_by_diabetes.png'), dpi=300, bbox_inches='tight')
+print(f"  Saved: {output_dir}/3a_bmi_by_diabetes.png")
+plt.close()
+
+print("Creating Visualization 3B: BMI Distribution by Hypertension Status")
+
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
+
+bmi_htn_data = df[df['BMXBMI'].notna() & df['Has_Hypertension'].notna()].copy()
+bmi_htn_data['HTN_Status'] = bmi_htn_data['Has_Hypertension'].map({0: 'No Hypertension', 1: 'Hypertension'})
+
+for status in ['No Hypertension', 'Hypertension']:
+    data = bmi_htn_data[bmi_htn_data['HTN_Status'] == status]['BMXBMI']
+    ax1.hist(data, bins=30, alpha=0.6, label=status, density=True, edgecolor='black', linewidth=0.5)
+
+ax1.set_xlabel('BMI (kg/m²)', fontsize=12, fontweight='bold')
+ax1.set_ylabel('Density', fontsize=12, fontweight='bold')
+ax1.set_title('BMI Distribution by Hypertension Status', fontsize=14, fontweight='bold', pad=20)
+ax1.legend(fontsize=11)
+ax1.grid(alpha=0.3, linestyle='--')
+ax1.axvline(x=25, color='orange', linestyle='--', linewidth=2, label='Overweight (25)')
+ax1.axvline(x=30, color='red', linestyle='--', linewidth=2, label='Obese (30)')
+ax1.legend(fontsize=10)
+
+bmi_htn_data_clean = bmi_htn_data[bmi_htn_data['HTN_Status'].isin(['No Hypertension', 'Hypertension'])]
+sns.boxplot(data=bmi_htn_data_clean, x='HTN_Status', y='BMXBMI', ax=ax2, 
+            hue='HTN_Status', palette=['#3498db', '#e74c3c'], width=0.6, legend=False,
+            order=['No Hypertension', 'Hypertension'], hue_order=['No Hypertension', 'Hypertension'])
+ax2.set_xlabel('Hypertension Status', fontsize=12, fontweight='bold')
+ax2.set_ylabel('BMI (kg/m²)', fontsize=12, fontweight='bold')
+ax2.set_title('BMI Distribution by Hypertension Status (Box Plot)', fontsize=14, fontweight='bold', pad=20)
+ax2.grid(axis='y', alpha=0.3, linestyle='--')
+ax2.axhline(y=25, color='orange', linestyle='--', linewidth=1.5, alpha=0.7, label='Overweight')
+ax2.axhline(y=30, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label='Obese')
+ax2.legend(fontsize=9)
+
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, '3b_bmi_by_hypertension.png'), dpi=300, bbox_inches='tight')
+print(f"  Saved: {output_dir}/3b_bmi_by_hypertension.png")
 plt.close()
 
 print("Creating Visualization 4: Age Trends")
@@ -709,7 +746,7 @@ plt.close()
 
 print("Creating Visualization 6: Lifestyle Factors")
 
-fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+fig, axes = plt.subplots(2, 3, figsize=(20, 12))
 
 smoking_data = df[df['SMQ020'].notna() & df['Has_Diabetes'].notna()].copy()
 smoking_data['Smoking_Status'] = smoking_data['SMQ020'].replace([7,9], np.nan)
@@ -724,6 +761,21 @@ axes[0, 0].grid(axis='y', alpha=0.3, linestyle='--')
 for bar, val in zip(bars1, smoking_diabetes.values):
     height = bar.get_height()
     axes[0, 0].text(bar.get_x() + bar.get_width()/2., height + 0.5,
+                    f'{val:.1f}%', ha='center', va='bottom', fontweight='bold')
+
+smoking_htn_data = df[df['SMQ020'].notna() & df['Has_Hypertension'].notna()].copy()
+smoking_htn_data['Smoking_Status'] = smoking_htn_data['SMQ020'].replace([7,9], np.nan)
+smoking_htn_data['Ever_Smoked'] = (smoking_htn_data['Smoking_Status'] == 1).map({True: 'Ever Smoked', False: 'Never Smoked'})
+smoking_htn = smoking_htn_data.groupby('Ever_Smoked')['Has_Hypertension'].mean() * 100
+
+bars3 = axes[1, 0].bar(smoking_htn.index, smoking_htn.values,
+                       color=['#3498db', '#e74c3c'], alpha=0.7, edgecolor='black', linewidth=1.5)
+axes[1, 0].set_ylabel('Hypertension Prevalence (%)', fontsize=11, fontweight='bold')
+axes[1, 0].set_title('Hypertension by Smoking Status', fontsize=12, fontweight='bold', pad=15)
+axes[1, 0].grid(axis='y', alpha=0.3, linestyle='--')
+for bar, val in zip(bars3, smoking_htn.values):
+    height = bar.get_height()
+    axes[1, 0].text(bar.get_x() + bar.get_width()/2., height + 1.0,
                     f'{val:.1f}%', ha='center', va='bottom', fontweight='bold')
 
 pa_data = df[df['PAD680'].notna() & df['Has_Diabetes'].notna()].copy()
@@ -742,32 +794,48 @@ for bar, val in zip(bars2, pa_diabetes.values):
     axes[0, 1].text(bar.get_x() + bar.get_width()/2., height + 0.5,
                     f'{val:.1f}%', ha='center', va='bottom', fontweight='bold')
 
-bmi_htn_data = df[df['BMXBMI'].notna() & df['Has_Hypertension'].notna()].copy()
-bmi_htn_data['HTN_Status'] = bmi_htn_data['Has_Hypertension'].map({0: 'No HTN', 1: 'Hypertension'})
-sns.boxplot(data=bmi_htn_data, x='HTN_Status', y='BMXBMI', ax=axes[1, 0],
-            hue='HTN_Status', palette=['#3498db', '#e74c3c'], width=0.6, legend=False)
-axes[1, 0].set_xlabel('Hypertension Status', fontsize=11, fontweight='bold')
-axes[1, 0].set_ylabel('BMI (kg/m²)', fontsize=11, fontweight='bold')
-axes[1, 0].set_title('BMI Distribution by Hypertension Status', fontsize=12, fontweight='bold', pad=15)
-axes[1, 0].grid(axis='y', alpha=0.3, linestyle='--')
+pa_htn_data = df[df['PAD680'].notna() & df['Has_Hypertension'].notna()].copy()
+pa_htn_data['PA_Category'] = pd.cut(pa_htn_data['PAD680'], bins=[0, 150, 300, np.inf],
+                                    labels=['Low\n(<150)', 'Moderate\n(150-300)', 'High\n(>300)'])
+pa_htn = pa_htn_data.groupby('PA_Category', observed=True)['Has_Hypertension'].mean() * 100
 
-age_diabetes_data = df[df['RIDAGEYR'].notna() & df['Has_Diabetes'].notna()].copy()
-age_diabetes_data['Diabetes_Status'] = age_diabetes_data['Has_Diabetes'].map({0: 'No Diabetes', 1: 'Diabetes'})
-for status in ['No Diabetes', 'Diabetes']:
-    data = age_diabetes_data[age_diabetes_data['Diabetes_Status'] == status]['RIDAGEYR']
-    axes[1, 1].hist(data, bins=20, alpha=0.6, label=status, density=True, edgecolor='black', linewidth=0.5)
-axes[1, 1].set_xlabel('Age (years)', fontsize=11, fontweight='bold')
-axes[1, 1].set_ylabel('Density', fontsize=11, fontweight='bold')
-axes[1, 1].set_title('Age Distribution by Diabetes Status', fontsize=12, fontweight='bold', pad=15)
-axes[1, 1].legend()
-axes[1, 1].grid(alpha=0.3, linestyle='--')
+bars4 = axes[1, 1].bar(pa_htn.index.astype(str), pa_htn.values,
+                       color='#9b59b6', alpha=0.7, edgecolor='black', linewidth=1.5)
+axes[1, 1].set_ylabel('Hypertension Prevalence (%)', fontsize=11, fontweight='bold')
+axes[1, 1].set_xlabel('Physical Activity (min/week)', fontsize=11, fontweight='bold')
+axes[1, 1].set_title('Hypertension by Physical Activity Level', fontsize=12, fontweight='bold', pad=15)
+axes[1, 1].grid(axis='y', alpha=0.3, linestyle='--')
+for bar, val in zip(bars4, pa_htn.values):
+    height = bar.get_height()
+    axes[1, 1].text(bar.get_x() + bar.get_width()/2., height + 1.0,
+                    f'{val:.1f}%', ha='center', va='bottom', fontweight='bold')
+
+bmi_diabetes_data = df[df['BMXBMI'].notna() & df['Has_Diabetes'].notna()].copy()
+bmi_diabetes_data['Diabetes_Status'] = bmi_diabetes_data['Has_Diabetes'].map({0: 'No Diabetes', 1: 'Diabetes'})
+sns.boxplot(data=bmi_diabetes_data, x='Diabetes_Status', y='BMXBMI', ax=axes[0, 2],
+            hue='Diabetes_Status', palette=['#3498db', '#e74c3c'], width=0.6, legend=False,
+            order=['No Diabetes', 'Diabetes'], hue_order=['No Diabetes', 'Diabetes'])
+axes[0, 2].set_xlabel('Diabetes Status', fontsize=11, fontweight='bold')
+axes[0, 2].set_ylabel('BMI (kg/m²)', fontsize=11, fontweight='bold')
+axes[0, 2].set_title('BMI Distribution by Diabetes Status', fontsize=12, fontweight='bold', pad=15)
+axes[0, 2].grid(axis='y', alpha=0.3, linestyle='--')
+
+bmi_htn_data = df[df['BMXBMI'].notna() & df['Has_Hypertension'].notna()].copy()
+bmi_htn_data['HTN_Status'] = bmi_htn_data['Has_Hypertension'].map({0: 'No Hypertension', 1: 'Hypertension'})
+sns.boxplot(data=bmi_htn_data, x='HTN_Status', y='BMXBMI', ax=axes[1, 2],
+            hue='HTN_Status', palette=['#3498db', '#e74c3c'], width=0.6, legend=False,
+            order=['No Hypertension', 'Hypertension'], hue_order=['No Hypertension', 'Hypertension'])
+axes[1, 2].set_xlabel('Hypertension Status', fontsize=11, fontweight='bold')
+axes[1, 2].set_ylabel('BMI (kg/m²)', fontsize=11, fontweight='bold')
+axes[1, 2].set_title('BMI Distribution by Hypertension Status', fontsize=12, fontweight='bold', pad=15)
+axes[1, 2].grid(axis='y', alpha=0.3, linestyle='--')
 
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, '6_lifestyle_factors.png'), dpi=300, bbox_inches='tight')
 print(f"  Saved: {output_dir}/6_lifestyle_factors.png")
 plt.close()
 
-print("Creating Visualization 7: BMI by Race and Diabetes Status")
+print("Creating Visualization 7A: BMI by Race and Diabetes Status")
 
 bmi_race_data = df[df['BMXBMI'].notna() & df['Has_Diabetes'].notna() & df['Race_Label'].notna()].copy()
 bmi_race_data['Diabetes_Status'] = bmi_race_data['Has_Diabetes'].map({0: 'No Diabetes', 1: 'Diabetes'})
@@ -784,8 +852,30 @@ ax.legend(title='Diabetes Status', fontsize=10, title_fontsize=11)
 ax.grid(axis='y', alpha=0.3, linestyle='--')
 plt.xticks(rotation=0)
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, '7_bmi_by_race_diabetes.png'), dpi=300, bbox_inches='tight')
-print(f"  Saved: {output_dir}/7_bmi_by_race_diabetes.png")
+plt.savefig(os.path.join(output_dir, '7a_bmi_by_race_diabetes.png'), dpi=300, bbox_inches='tight')
+print(f"  Saved: {output_dir}/7a_bmi_by_race_diabetes.png")
+plt.close()
+
+print("Creating Visualization 7B: BMI by Race and Hypertension Status...")
+
+bmi_race_htn_data = df[df['BMXBMI'].notna() & df['Has_Hypertension'].notna() & df['Race_Label'].notna()].copy()
+bmi_race_htn_data['HTN_Status'] = bmi_race_htn_data['Has_Hypertension'].map({0: 'No Hypertension', 1: 'Hypertension'})
+
+fig, ax = plt.subplots(figsize=(16, 8))
+sns.boxplot(data=bmi_race_htn_data, x='Race_Label', y='BMXBMI', hue='HTN_Status',
+            palette={'No Hypertension': '#3498db', 'Hypertension': '#e74c3c'}, ax=ax, width=0.7,
+            hue_order=['No Hypertension', 'Hypertension'])
+ax.set_xlabel('Race/Ethnicity', fontsize=12, fontweight='bold')
+ax.set_ylabel('BMI (kg/m²)', fontsize=12, fontweight='bold')
+ax.set_title('BMI Distribution by Race/Ethnicity and Hypertension Status', fontsize=14, fontweight='bold', pad=20)
+ax.axhline(y=25, color='orange', linestyle='--', linewidth=1.5, alpha=0.7, label='Overweight (25)')
+ax.axhline(y=30, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label='Obese (30)')
+ax.legend(title='Hypertension Status', fontsize=10, title_fontsize=11)
+ax.grid(axis='y', alpha=0.3, linestyle='--')
+plt.xticks(rotation=0)
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, '7b_bmi_by_race_hypertension.png'), dpi=300, bbox_inches='tight')
+print(f"  Saved: {output_dir}/7b_bmi_by_race_hypertension.png")
 plt.close()
 
 print("Creating Visualization 8: Age-Stratified Disease Rates by Race")
@@ -837,7 +927,7 @@ plt.savefig(os.path.join(output_dir, '8_age_stratified_by_race.png'), dpi=300, b
 print(f"  Saved: {output_dir}/8_age_stratified_by_race.png")
 plt.close()
 
-print("Creating Visualization 9: Diabetes Risk Factor Interactions by Race")
+print("Creating Visualization 9A: Diabetes Risk Factor Interactions by Race")
 
 fig, axes = plt.subplots(2, 2, figsize=(16, 12))
 
@@ -920,8 +1010,8 @@ else:
     axes[1, 1].text(0.5, 0.5, 'Insufficient data for plot', ha='center', va='center', fontsize=12, fontweight='bold')
 
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, '9_risk_factors_by_race.png'), dpi=300, bbox_inches='tight')
-print(f"  Saved: {output_dir}/9_risk_factors_by_race.png")
+plt.savefig(os.path.join(output_dir, '9a_diabetes_risk_factors_by_race.png'), dpi=300, bbox_inches='tight')
+print(f"  Saved: {output_dir}/9a_diabetes_risk_factors_by_race.png")
 plt.close()
 
 print("Creating Visualization 9B: Hypertension Risk Factor Interactions by Race")
