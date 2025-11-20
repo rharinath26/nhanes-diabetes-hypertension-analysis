@@ -58,7 +58,7 @@ We calculate permutation importance for all overall and race-specific models usi
 - RF + XGBoost pipelines (overall and race-specific) address missingness, non-linear effects, and class imbalance with minimal tuning.
 - Permutation-importance rankings generally agree with initial Gini importance but are less biased, providing reliable feature orderings for each saved model.
 - ROC/PR curves demonstrate relatively strong discrimination in the face of low diabetes prevalence.
-- Running models with and without age cleanly separates modifiable factors from this confounding demographic.
+- Running models with and without age cleanly separates modifiable factors from age, which is a confounding demographic.
 
 **Weaknesses**
 - Tree ensembles remain partially opaque. Permutation importance orders features but does not show interaction directionality.
@@ -102,10 +102,10 @@ Every overall and race-specific RF model has a paired CSV + PNG saved as `modeli
 1. **Feature Engineering**
    - Derived ratios (sodium per kcal, metabolic syndrome indicators, BP categories).
    - Interaction terms (Race × BMI, SES × lifestyle, Age × PA).
-   - Temporal ordering if multiple survey waves are combined.
+   - Expand features with anthropometric/diet/activity composites (waist-to-height ratio, lipid ratios, sedentary time), richer behavioral history (smoking pack-years, alcohol patterns), and socioeconomic context (education, insurance, survey-weighted indicators).
 
 2. **Modeling Enhancements**
-   - Try out elastic-net logistic regression for interpretability.
+   - Try out logistic regression for interpretability.
    - Perform grid/random search for RF/XGBoost hyperparameters.
    - Use partial dependence/ALE plots to expose localized effects and interactions.
 
@@ -119,6 +119,6 @@ Every overall and race-specific RF model has a paired CSV + PNG saved as `modeli
    - Conduct sensitivity analyses excluding proxy features or using multiple imputation for sparse labs.
 
 5. **Clustering & Personas**
-   - Extend KMeans/UMAP/HDBSCAN pipelines to profile “personas” grounded in lifestyle/dietary variables.
+   - Use KMeans/UMAP/HDBSCAN pipelines to profile “personas” grounded in lifestyle/dietary variables.
    - Use those personas to tailor recommendations for modifiable behaviors.
 
