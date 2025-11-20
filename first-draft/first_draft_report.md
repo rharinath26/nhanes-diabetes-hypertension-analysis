@@ -4,7 +4,7 @@
 
 ### Model Selection and Training
 
-We trained two ensemble classifiers for diabetes and hypertension prediction:
+We trained two ensemble classifiers to predict whether a given person has diabetes or hypertension:
 
 1. **Random Forest** (500 trees, class weighting, median imputation)
 2. **XGBoost** (500 estimators, max_depth=6, learning_rate=0.1, class weighting, median imputation)
@@ -27,9 +27,9 @@ We used 5-fold Stratified CV with:
 |--------------|-------------------|---------|--------|
 | Diabetes     | Random baseline   | 0.508   | 0.090  |
 |              | Random Forest     | 0.896   | 0.612  |
-|              | XGBoost           | 0.878   | 0.554  |
-| Hypertension | Random baseline   | 0.503   | 0.623  |
-|              | Random Forest     | 0.834   | 0.502  |
+|              | XGBoost           | 0.878   | 0.623  |
+| Hypertension | Random baseline   | 0.503   | 0.251  |
+|              | Random Forest     | 0.834   | 0.554  |
 |              | XGBoost           | 0.835   | 0.595  |
 
 Overall, Random Forest and XGBoost both had solid ROC-AUC scores and relatively good PR-AUC scores compared to the random baseline They significantly outperformed the random baseline. Random Forest seemed to have better ROC than XGBoost, but XGBoost outperformed Random Forest in PR-AUC. However, after looking at XGBoost's race-specific ROC and PR curves, it appeared that it was performing somewhat worse (for example, hitting below .4 PR-AUC for Hypertension on several races which Random Forest never did) and more inconsistently than Random Forest. We decided to continue the evaluation using Random Forest for this reason on the first draft, but we may explore XGBoost for the final version of the project. 
@@ -41,15 +41,15 @@ Permutation importance (ROC-AUC drop when shuffling a feature) is our primary in
 - Works with any saved RF pipeline.
 - Shares attribution fairly among correlated variables.
 
-We compute permutation importance for all overall and race-specific models using the stored pipelines, sampling up to 5k rows for overall models and using all rows for race-specific cohorts.
+We calculate permutation importance for all overall and race-specific models using the stored model pipelines for each demographic group, sampling up to 5k rows for overall models and using all rows for racial groups.
 
 ### Feature Importance Conclusions
 
 - **Most significant risk factors overall:** (BMI, HbA1c, moderate activity, income-to-poverty ratio, smoking status, systolic BP) are consistently significant risk factors for both diseases across all races.
 - **Race-specific ordering** shifts slightly:
   - Diabetes: HbA1c was the most commonly seen most significant diabetes factor for each race. HbA1c, moderate activity, and poverty ratio were the three most prominent features for diabetes for each race. Non-Hispanic Asian is the only racial group where moderate activity is rank #1 (HbA1c #2). Mexican Americans are the only group with poverty at rank #2. Non-Hispanic White and Other Hispanic racial groups rank “Ever Smoked” in the top four.
-  - Hypertension: Activity and socioeconomic status typically lead, but systolic BP was rank #1 for Non-Hispanic Asian (activity #2) and was rank #3 for Non-Hispanic Black. Also, income ratio was #2 for Non-Hispanic Black and Other Hispanic.
-- **Age is confounding**: Age overwhelms other factors when included. Removing it shifts the emphasis to actionable lifestyle and socioeconomic factors.
+  - Hypertension: Activity and socioeconomic status typically led, but systolic BP was rank #1 for Non-Hispanic Asian (activity #2) and was rank #3 for Non-Hispanic Black. Income ratio was #2 for Non-Hispanic Black and Other Hispanic.
+- **Age is confounding**: Age overwhelms other factors when included. Removing it shifts the model's emphasis to actionable lifestyle and socioeconomic factors.
 - All permutation CSVs/plots can be found under `modeling_outputs/permutation_importance/` for more info.
 
 ## Baseline Strengths and Weaknesses
@@ -91,7 +91,7 @@ _XGBoost_
 Every overall and race-specific RF model has a paired CSV + PNG saved as `modeling_outputs/permutation_importance/perm_importance_<model>.csv|.png`.
 
 ## Possible Reasons for Errors or Bias
-- **Confounding/Proxy Features**: Age and HbA1c closely track diagnoses. Using both can mask subtler drivers unless we remove age or evaluate stratified runs.
+- **Confounding/Proxy Features**: Age and HbA1c closely track diagnoses. Using both can mask subtler driving features unless we remove age (which we did) or evaluate stratified runs.
 - **Class Imbalance**: Diabetes prevalence (~9%) lowers precision at high recall. PR curves highlight this, but threshold tuning is still needed.
 - **Self-reported Measures**: Activity, smoking, and alcohol questions vary by SES/race, introducing measurement bias.
 - **Survey Design**: We currently treat NHANES as a simple random sample. Ignoring survey weights can bias population-level estimates.
