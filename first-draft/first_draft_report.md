@@ -13,7 +13,7 @@ For each algorithm we built:
 - **Overall models** (full cohort) with and without age to quantify age’s confounding effect and surface modifiable drivers.
 - **Race-specific models** (no age) to understand population-specific risk profiles.
 
-**Feature set**: 24 covariates spanning demographics, BMI, physical activity, diet, smoking/alcohol, and clinical labs (HbA1c, cholesterol, blood pressure). We exclude `LBXGLU` (<insert description here>; sparse, near-leakage) and `BMXWAIST` (waist length; collinear with BMI).
+**Feature set**: 24 features including BMI, physical activity, diet, smoking/alcohol, and clinical labs (HbA1c, cholesterol, blood pressure). We exclude `LBXGLU` (fasting plasma glucose; collinear with HbA1c) and `BMXWAIST` (waist length; collinear with BMI).
 
 ### Model Evaluation and Comparison
 
@@ -21,7 +21,19 @@ We used 5-fold Stratified CV with:
 - **ROC-AUC** (overall discrimination)
 - **PR-AUC** (minority-class performance)
 
-**Results**: Overall, Random Forest and XGBoost both had solid ROC-AUC scores and relatively good PR-AUC scores. They significantly outperformed the random baseline. After removing age, Random Forest achieved ROC-AUC of 0.896 on Diabetes and 0.834 on Hypertension for the overall data (not split by race). This is overall slightly better than XGBoost's ROC-AUC of 0.878 on Diabetss and 0.835 on Hypertension. Furthermore, Random Forest had slightly more stable race-specific performance compared to XGBoost. Thus, we decided to continue the evaluation using Random Forest.
+**Results** (overall models, without age):
+
+| Disease      | Model             | ROC-AUC | PR-AUC |
+|--------------|-------------------|---------|--------|
+| Diabetes     | Random baseline   | 0.508   | 0.090  |
+|              | Random Forest     | 0.896   | 0.612  |
+|              | XGBoost           | 0.878   | 0.554  |
+| Hypertension | Random baseline   | 0.503   | 0.623  |
+|              | Random Forest     | 0.834   | 0.502  |
+|              | XGBoost           | 0.835   | 0.595  |
+
+Overall, Random Forest and XGBoost both had solid ROC-AUC scores and relatively good PR-AUC scores compared to the random baseline They significantly outperformed the random baseline. Random Forest seemed to have better ROC than XGBoost, but XGBoost outperformed Random Forest in PR-AUC. However, after looking at XGBoost's race-specific ROC and PR curves, it appeared that it was performing somewhat worse (for example, hitting below .4 PR-AUC for Hypertension on several races which Random Forest never did) and more inconsistently than Random Forest. We decided to continue the evaluation using Random Forest for this reason on the first draft, but we may explore XGBoost for the final version of the project. 
+
 
 ### Feature Importance Analysis (Permutation Importance)
 
@@ -33,25 +45,25 @@ We compute permutation importance for all overall and race-specific models using
 
 ### Feature Importance Conclusions
 
-- **Core modifiable drivers** (BMI, HbA1c, moderate activity, income-to-poverty ratio, smoking status, systolic BP) dominate risk for both diseases across all races.
+- **Most significant risk factors overall:** (BMI, HbA1c, moderate activity, income-to-poverty ratio, smoking status, systolic BP) are consistently significant risk factors for both diseases across all races.
 - **Race-specific ordering** shifts slightly:
-  - Diabetes: HbA1c, moderate activity, and poverty ratio form a common top trio. Non-Hispanic Asian is the only cohort where moderate activity is rank #1 (HbA1c #2, systolic BP #4); Mexican American elevates poverty ratio to rank #2; Non-Hispanic White and Other Hispanic cohorts rank “Ever Smoked” in the top four.
-  - Hypertension: Activity and socioeconomic status typically lead, but systolic BP becomes rank #1 for Non-Hispanic Asian (activity #2) and reaches rank #3 for Non-Hispanic Black—higher than in Mexican American or Other/Multi-racial cohorts.
-- **Age confounding**: Age overwhelms other factors when included; removing it reveals actionable lifestyle and socioeconomic levers.
-- All permutation CSVs/plots can be found under `modeling_outputs/permutation_importance/` for deeper inspection.
+  - Diabetes: HbA1c was the most commonly seen most significant diabetes factor for each race. HbA1c, moderate activity, and poverty ratio were the three most prominent features for diabetes for each race. Non-Hispanic Asian is the only racial group where moderate activity is rank #1 (HbA1c #2). Mexican Americans are the only group with poverty at rank #2. Non-Hispanic White and Other Hispanic racial groups rank “Ever Smoked” in the top four.
+  - Hypertension: Activity and socioeconomic status typically lead, but systolic BP was rank #1 for Non-Hispanic Asian (activity #2) and was rank #3 for Non-Hispanic Black. Also, income ratio was #2 for Non-Hispanic Black and Other Hispanic.
+- **Age is confounding**: Age overwhelms other factors when included. Removing it shifts the emphasis to actionable lifestyle and socioeconomic factors.
+- All permutation CSVs/plots can be found under `modeling_outputs/permutation_importance/` for more info.
 
 ## Baseline Strengths and Weaknesses
 
 **Strengths**
 - RF + XGBoost pipelines (overall and race-specific) address missingness, non-linear effects, and class imbalance with minimal tuning.
 - Permutation-importance rankings generally agree with initial Gini importance but are less biased, providing reliable feature orderings for each saved model.
-- ROC/PR curves demonstrate strong discrimination (overall ROC-AUC ≈ 0.90) despite low diabetes prevalence.
-- Running models with and without age cleanly separates modifiable factors from confounding demographics.
+- ROC/PR curves demonstrate relatively strong discrimination in the face of low diabetes prevalence.
+- Running models with and without age cleanly separates modifiable factors from this confounding demographic.
 
 **Weaknesses**
-- Tree ensembles remain partially opaque; permutation importance orders features but does not show interaction directionality.
-- Top predictors are dominated by HbA1c/BMI, which can mask subtler nutrition or lifestyle signals we may want to surface.
-- Race-specific models can underfit in smaller cohorts (e.g., Non-Hispanic Asian hypertension), which may bring about variance in rankings.
+- Tree ensembles remain partially opaque. Permutation importance orders features but does not show interaction directionality.
+- Top predictors are dominated by HbA1c/BMI, which can mask subtler nutrition or lifestyle signals we may want to reveal and analyze.
+- Race-specific models can underfit in smaller racial groups (e.g., Non-Hispanic Asian hypertension), which may bring about variance in rankings.
 
 ## Model Visualizations
 
@@ -79,10 +91,10 @@ _XGBoost_
 Every overall and race-specific RF model has a paired CSV + PNG saved as `modeling_outputs/permutation_importance/perm_importance_<model>.csv|.png`.
 
 ## Possible Reasons for Errors or Bias
-- **Confounding/Proxy Features**: Age and HbA1c closely track diagnoses; using both can mask subtler drivers unless we remove age or evaluate stratified runs.
-- **Class Imbalance**: Diabetes prevalence (~9%) lowers precision at high recall; PR curves highlight this, but threshold tuning is still needed.
+- **Confounding/Proxy Features**: Age and HbA1c closely track diagnoses. Using both can mask subtler drivers unless we remove age or evaluate stratified runs.
+- **Class Imbalance**: Diabetes prevalence (~9%) lowers precision at high recall. PR curves highlight this, but threshold tuning is still needed.
 - **Self-reported Measures**: Activity, smoking, and alcohol questions vary by SES/race, introducing measurement bias.
-- **Survey Design**: We currently treat NHANES as a simple random sample; ignoring survey weights can bias population-level estimates.
+- **Survey Design**: We currently treat NHANES as a simple random sample. Ignoring survey weights can bias population-level estimates.
 - **Reverse Causality**: Diagnosed individuals may change diet/activity, so some correlations could reflect treatment effects rather than root causes.
 
 ## Ideas for Final Report / Next Steps
