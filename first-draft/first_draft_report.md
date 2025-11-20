@@ -82,7 +82,7 @@ _XGBoost_
 ![XGB Hypertension ROC](modeling_outputs/xgboost/curves/has_hypertension_without_age_roc.png)
 ![XGB Hypertension PR](modeling_outputs/xgboost/curves/has_hypertension_without_age_pr.png)
 
-### Overall Feature Importance (Random Forest, without age)
+### Permutation Feature Importance
 
 ![RF Diabetes FI](modeling_outputs/permutation_importance/perm_importance_has_diabetes_without_age.png)
 ![RF Hypertension FI](modeling_outputs/permutation_importance/perm_importance_has_hypertension_without_age.png)
