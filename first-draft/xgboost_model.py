@@ -251,7 +251,6 @@ def train_group_models(
         X = subset[feature_cols]
         y = subset[target_col].astype(int)
 
-        # Calculate class weights
         n_pos = y.sum()
         n_neg = len(y) - n_pos
         scale_pos_weight = n_neg / n_pos if n_pos > 0 else 1.0
@@ -355,7 +354,6 @@ def main():
     all_feature_dfs = []
     all_metrics_dfs = []
 
-    # Overall models (with and without age)
     for include_age in [True, False]:
         age_label = "with_age" if include_age else "without_age"
         features = get_features(include_age)
