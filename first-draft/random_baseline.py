@@ -4,15 +4,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, precision_recall_curve, auc, average_precision_score
 
+PARQUET_FOLDER = "parquet"
 OUTPUT_DIR = os.path.join("modeling_outputs", "random_baseline")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-MPL_CACHE_DIR = os.path.join(OUTPUT_DIR, ".mplcache")
-os.makedirs(MPL_CACHE_DIR, exist_ok=True)
-os.environ.setdefault("MPLCONFIGDIR", MPL_CACHE_DIR)
-os.environ.setdefault("LOKY_MAX_CPU_COUNT", "1")
-
-PARQUET_FOLDER = "parquet"
 
 
 def load_dataframe() -> pd.DataFrame:
