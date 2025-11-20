@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76b01d88-dfb8-4201-87fa-89993ed90ec1" name="Changes" comment="week 9">
+      <change afterPath="$PROJECT_DIR$/first-draft/first_draft_report.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/model_by_race.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/model_overall.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/ALB_CR_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/ALQ_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/BIOPRO_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/BMX_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/BPQ_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/BPXO_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/DBQ_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/DEMO_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/DIQ_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/DR1TOT_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/DR2TOT_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/DSQTOT_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/GHB_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/GLU_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/HDL_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/HSCRP_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/HSQ_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/INS_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/MCQ_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/PAQ_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/SMQ_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/TCHOL_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/parquet/TRIGLY_L.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/permutation_importance_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first-draft/plot_feature_importance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eda.py" beforeDir="false" afterPath="$PROJECT_DIR$/eda/eda.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eda_summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/eda/eda_summary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/ALB_CR_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/ALB_CR_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/ALQ_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/ALQ_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/BIOPRO_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/BIOPRO_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/BMX_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/BMX_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/BPQ_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/BPQ_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/BPXO_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/BPXO_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/DBQ_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/DBQ_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/DEMO_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/DEMO_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/DIQ_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/DIQ_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/DR1TOT_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/DR1TOT_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/DR2TOT_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/DR2TOT_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/DSQTOT_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/DSQTOT_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/GHB_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/GHB_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/GLU_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/GLU_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/HDL_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/HDL_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/HSCRP_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/HSCRP_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/HSQ_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/HSQ_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/INS_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/INS_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/MCQ_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/MCQ_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/PAQ_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/PAQ_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/SMQ_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/SMQ_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/TCHOL_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/TCHOL_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parquet/TRIGLY_L.parquet" beforeDir="false" afterPath="$PROJECT_DIR$/eda/parquet/TRIGLY_L.parquet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/10_dietary_risk_patterns.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/10_dietary_risk_patterns.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/1_disease_prevalence_by_race.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/1_disease_prevalence_by_race.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/2_correlation_heatmap.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/2_correlation_heatmap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/3a_bmi_by_diabetes.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/3a_bmi_by_diabetes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/3b_bmi_by_hypertension.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/3b_bmi_by_hypertension.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/4_age_trends.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/4_age_trends.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/5_missing_data.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/5_missing_data.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/6_lifestyle_factors.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/6_lifestyle_factors.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/7a_bmi_by_race_diabetes.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/7a_bmi_by_race_diabetes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/7b_bmi_by_race_hypertension.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/7b_bmi_by_race_hypertension.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/8_age_stratified_by_race.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/8_age_stratified_by_race.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/9a_diabetes_risk_factors_by_race.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/9a_diabetes_risk_factors_by_race.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/9b_hypertension_risk_factors_by_race.png" beforeDir="false" afterPath="$PROJECT_DIR$/eda/visualizations/9b_hypertension_risk_factors_by_race.png" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="35PpfoQH3sOKMEwcbyGe7W1fdcJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.compare_models.executor": "Run",
+    "Python.eda.executor": "Run",
+    "Python.kmeans_profiles.executor": "Run",
+    "Python.kmeans_profiles_new.executor": "Run",
+    "Python.kmeans_profiles_no_age.executor": "Run",
+    "Python.model_by_race.executor": "Run",
+    "Python.model_overall.executor": "Run",
+    "Python.modeling.executor": "Run",
+    "Python.modeling_overall.executor": "Run",
+    "Python.permutation_importance_analysis.executor": "Run",
+    "Python.plot_feature_importance.executor": "Run",
+    "Python.random_forest_by_race.executor": "Run",
+    "Python.random_forest_overall.executor": "Run",
+    "Python.shap_analysis.executor": "Run",
+    "Python.xgboost.executor": "Run",
+    "Python.xgboost_model.executor": "Run",
+    "Python.xgboost_models.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/rithvikharinath/nhanes-diabetes-hypertension-analysis/first-draft"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/first-draft" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/eda" />
+      <recent name="$PROJECT_DIR$/modeling_outputs/randomforest" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76b01d88-dfb8-4201-87fa-89993ed90ec1" name="Changes" comment="" />
+      <created>1763021666709</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763021666709</updated>
+    </task>
+    <task id="LOCAL-00001" summary="week 8">
+      <option name="closed" value="true" />
+      <created>1763023564072</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763023564072</updated>
+    </task>
+    <task id="LOCAL-00002" summary="week 8">
+      <option name="closed" value="true" />
+      <created>1763023598596</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763023598596</updated>
+    </task>
+    <task id="LOCAL-00003" summary="week 8">
+      <option name="closed" value="true" />
+      <created>1763053158078</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763053158078</updated>
+    </task>
+    <task id="LOCAL-00004" summary="week 8">
+      <option name="closed" value="true" />
+      <created>1763053352436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763053352436</updated>
+    </task>
+    <task id="LOCAL-00005" summary="week 8">
+      <option name="closed" value="true" />
+      <created>1763061985350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1763061985350</updated>
+    </task>
+    <task id="LOCAL-00006" summary="week 9">
+      <option name="closed" value="true" />
+      <created>1763622965052</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1763622965052</updated>
+    </task>
+    <task id="LOCAL-00007" summary="week 9">
+      <option name="closed" value="true" />
+      <created>1763623386411</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1763623386411</updated>
+    </task>
+    <task id="LOCAL-00008" summary="week 9">
+      <option name="closed" value="true" />
+      <created>1763624000486</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1763624000486</updated>
+    </task>
+    <task id="LOCAL-00009" summary="week 9">
+      <option name="closed" value="true" />
+      <created>1763624846881</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1763624846881</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="week 8" />
+    <MESSAGE value="week 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="week 9" />
+  </component>
+</project>
