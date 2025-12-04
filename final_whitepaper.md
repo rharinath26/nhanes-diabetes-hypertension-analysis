@@ -7,7 +7,7 @@
 
 ## Abstract
 
-Health disparities in diabetes and hypertension persist across racial groups in the United States, yet prevention strategies remain largely uniform. This project develops a machine learning framework to identify population-specific risk factors using National Health and Nutrition Examination Survey (NHANES) data from 11,933 participants. I built Random Forest classifiers achieving 89.6% ROC-AUC for diabetes and 83.4% for hypertension overall, then applied permutation importance analysis validated across 10 bootstrap trials to quantify race-specific risk patterns. I found that biological markers (HbA1c, Systolic BP) contribute universal predictive power across all populations, while socioeconomic and behavioral factors show dramatic variation. For Black and Mexican American populations, poverty is 4-115× more important than BMI and ranks #2-3 across conditions, accounting for 11-23% of preventable risk. For Non-Hispanic Whites, smoking is 1.6-56× more important than BMI, ranking #3-4 and contributing 8-13% of risk. These findings suggest a precision prevention approach: universal screening for clinical markers, combined with population-targeted interventions addressing poverty for Black/Mexican American communities and smoking cessation for White populations.
+Health disparities in diabetes and hypertension persist across racial groups in the United States, yet prevention strategies remain largely uniform. This project develops a machine learning framework to identify population-specific risk factors using National Health and Nutrition Examination Survey (NHANES) data from 11,933 participants. I built Random Forest classifiers achieving 89.6% ROC-AUC for diabetes and 83.4% for hypertension overall, then applied permutation importance analysis validated across 10 bootstrap trials to quantify race-specific risk patterns. I found that biological markers (HbA1c, Systolic BP) contribute universal predictive power across all populations, while socioeconomic and behavioral factors show fair variation. For Black and Mexican American populations, poverty is 4-115× more important than BMI and ranks #2-3 across conditions, accounting for 11-23% of preventable risk. For Non-Hispanic Whites, smoking is 1.6-56× more important than BMI, ranking #3-4 and contributing 8-13% of risk. These findings suggest a precision prevention approach: universal screening for clinical markers, combined with population-targeted interventions addressing poverty for Black/Mexican American communities and smoking cessation for White populations.
 
 ---
 
@@ -108,7 +108,7 @@ Beyond universal predictors like HbA1c and sedentary behavior, each racial group
 
 #### **Poverty as a Primary Driver (Black & Mexican American Populations):**
 
-For both Non-Hispanic Black and Mexican American populations, Income-Poverty Ratio dramatically outranks traditional intervention targets:
+For both Non-Hispanic Black and Mexican American populations, Income-Poverty Ratio significantly outranks traditional intervention targets:
 
 | Population | Disease | Poverty Rank | Poverty | BMI | Moderate Activity | Cholesterol | Sodium |
 |------------|---------|--------------|---------|-----|-------------------|-------------|--------|
