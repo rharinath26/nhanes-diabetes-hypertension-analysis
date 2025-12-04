@@ -17,7 +17,7 @@ from sklearn.pipeline import Pipeline
 from xgboost import XGBClassifier
 
 PARQUET_FOLDER = "parquet"
-OUTPUT_DIR = "modeling_outputs/xgboost_by_race"
+OUTPUT_DIR = "modeling_outputs/xgboost/xgboost_by_race"
 CURVE_DIR = os.path.join(OUTPUT_DIR, "curves")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(CURVE_DIR, exist_ok=True)

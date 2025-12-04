@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Directories
-PERM_DIR = "ml/modeling_outputs/permutation_importance"
-STABILITY_DIR = "ml/modeling_outputs/stability"
+PERM_DIR = "ml/modeling_outputs/random_forest/permutation_importance"
+STABILITY_DIR = "ml/modeling_outputs/random_forest/stability"
 OUTPUT_DIR = "ml/modeling_outputs"
 
 # Label mapping - Fix incorrect labels

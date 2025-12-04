@@ -70,10 +70,10 @@ We calculate permutation importance for all overall and race-specific models usi
 ### Overall Model Performance Curves (without age)
 _Random Forest_
 
-![RF Diabetes ROC](modeling_outputs/curves_overall/has_diabetes_without_age_roc.png)
-![RF Diabetes PR](modeling_outputs/curves_overall/has_diabetes_without_age_pr.png)
-![RF Hypertension ROC](modeling_outputs/curves_overall/has_hypertension_without_age_roc.png)
-![RF Hypertension PR](modeling_outputs/curves_overall/has_hypertension_without_age_pr.png)
+![RF Diabetes ROC](modeling_outputs/random_forest/curves_overall/has_diabetes_without_age_roc.png)
+![RF Diabetes PR](modeling_outputs/random_forest/curves_overall/has_diabetes_without_age_pr.png)
+![RF Hypertension ROC](modeling_outputs/random_forest/curves_overall/has_hypertension_without_age_roc.png)
+![RF Hypertension PR](modeling_outputs/random_forest/curves_overall/has_hypertension_without_age_pr.png)
 
 _XGBoost_
 
@@ -84,8 +84,8 @@ _XGBoost_
 
 ### Permutation Feature Importance
 
-![RF Diabetes FI](modeling_outputs/permutation_importance/perm_importance_has_diabetes_without_age.png)
-![RF Hypertension FI](modeling_outputs/permutation_importance/perm_importance_has_hypertension_without_age.png)
+![RF Diabetes FI](modeling_outputs/random_forest/permutation_importance/perm_importance_has_diabetes_without_age.png)
+![RF Hypertension FI](modeling_outputs/random_forest/permutation_importance/perm_importance_has_hypertension_without_age.png)
 
 ### Permutation Feature Importance
 Every overall and race-specific RF model has a paired CSV + PNG saved as `modeling_outputs/permutation_importance/perm_importance_<model>.csv|.png`.
