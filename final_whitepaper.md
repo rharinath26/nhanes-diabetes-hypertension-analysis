@@ -61,6 +61,9 @@ We selected **Random Forest** (class-weighted, 100 trees) as our primary model b
 ### 3.2 Universal Drivers of Risk
 Permutation importance analysis using Random Forest, validated by stability checks across 10 bootstrap trials, reveals distinct patterns:
 
+![RF Diabetes FI](ml/modeling_outputs/random_forest/permutation_importance/perm_importance_has_diabetes_without_age.png)
+![RF Hypertension FI](ml/modeling_outputs/random_forest/permutation_importance/perm_importance_has_hypertension_without_age.png)
+
 1.  **HbA1c for Diabetes:** The universal #1 predictor with perfect stability (Mean Rank 1.0 across all 6 racial groups, Top_3_Freq = 1.0). This biological marker demonstrates the highest permutation importance (0.081) and is consistently the most important feature regardless of population subgroup.
 
 2.  **Systolic Blood Pressure for Hypertension:** Highly stable predictor across all populations (Mean Rank 1.0-2.1, Top_3_Freq = 1.0), ranking #2 in overall permutation importance (0.037). This finding suggests that direct biological measurement of BP is a more reliable predictor than self-reported behavioral factors.
