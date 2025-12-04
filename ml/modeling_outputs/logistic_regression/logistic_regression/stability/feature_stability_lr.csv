@@ -1,0 +1,277 @@
+Race,Target,Feature,Model,Mean_Rank,Std_Rank,Min_Rank,Max_Rank,Top_3_Freq
+Mexican American,Has_Diabetes,Gender,LR,4.6,1.9078784028338913,2,8,0.3
+Mexican American,Has_Diabetes,Race,LR,23.0,0.0,23,23,0.0
+Mexican American,Has_Diabetes,Income_Ratio,LR,20.2,1.4000000000000001,18,22,0.0
+Mexican American,Has_Diabetes,BMI,LR,13.1,1.0440306508910548,11,14,0.0
+Mexican American,Has_Diabetes,Mod_Activity,LR,13.1,1.1357816691600546,12,15,0.0
+Mexican American,Has_Diabetes,Vig_Activity,LR,17.6,2.1071307505705477,14,22,0.0
+Mexican American,Has_Diabetes,Calories,LR,10.7,4.8999999999999995,2,20,0.1
+Mexican American,Has_Diabetes,Sodium,LR,7.3,2.8301943396169813,2,13,0.1
+Mexican American,Has_Diabetes,Carbs,LR,19.4,1.562049935181331,16,21,0.0
+Mexican American,Has_Diabetes,Fat,LR,3.5,2.4596747752497685,2,10,0.8
+Mexican American,Has_Diabetes,Sat_Fat,LR,3.6,1.3564659966250536,2,6,0.6
+Mexican American,Has_Diabetes,Sugar,LR,8.3,2.1,5,12,0.0
+Mexican American,Has_Diabetes,Fiber,LR,11.4,1.9078784028338915,9,15,0.0
+Mexican American,Has_Diabetes,Protein,LR,17.9,2.0223748416156684,15,21,0.0
+Mexican American,Has_Diabetes,Ever_Smoked,LR,7.2,3.5156791662493894,3,14,0.1
+Mexican American,Has_Diabetes,Smoke_Freq,LR,20.7,1.9519221295943137,16,22,0.0
+Mexican American,Has_Diabetes,Alc_Freq,LR,17.5,1.8027756377319946,15,20,0.0
+Mexican American,Has_Diabetes,Alc_Amt,LR,15.0,2.8284271247461903,11,19,0.0
+Mexican American,Has_Diabetes,HbA1c,LR,1.0,0.0,1,1,1.0
+Mexican American,Has_Diabetes,Cholesterol,LR,6.6,1.2806248474865698,5,9,0.0
+Mexican American,Has_Diabetes,HDL,LR,17.9,2.2561028345356955,16,22,0.0
+Mexican American,Has_Diabetes,Sys_BP,LR,6.6,1.9595917942265424,4,10,0.0
+Mexican American,Has_Diabetes,Dia_BP,LR,9.8,1.7776388834631178,7,13,0.0
+Non-Hispanic Asian,Has_Diabetes,Gender,LR,18.4,3.8781438859330635,8,22,0.0
+Non-Hispanic Asian,Has_Diabetes,Race,LR,23.0,0.0,23,23,0.0
+Non-Hispanic Asian,Has_Diabetes,Income_Ratio,LR,12.0,4.538722287164087,7,21,0.0
+Non-Hispanic Asian,Has_Diabetes,BMI,LR,5.2,1.1661903789690602,3,7,0.1
+Non-Hispanic Asian,Has_Diabetes,Mod_Activity,LR,11.3,3.7696153649941526,9,22,0.0
+Non-Hispanic Asian,Has_Diabetes,Vig_Activity,LR,13.8,1.7204650534085253,10,16,0.0
+Non-Hispanic Asian,Has_Diabetes,Calories,LR,7.6,5.102940328869229,3,17,0.4
+Non-Hispanic Asian,Has_Diabetes,Sodium,LR,17.8,2.6381811916545836,14,21,0.0
+Non-Hispanic Asian,Has_Diabetes,Carbs,LR,16.8,3.8157568056677826,10,22,0.0
+Non-Hispanic Asian,Has_Diabetes,Fat,LR,11.9,2.947880594596735,6,18,0.0
+Non-Hispanic Asian,Has_Diabetes,Sat_Fat,LR,12.7,4.94064773081425,7,21,0.0
+Non-Hispanic Asian,Has_Diabetes,Sugar,LR,16.7,3.6891733491393435,8,21,0.0
+Non-Hispanic Asian,Has_Diabetes,Fiber,LR,4.4,1.0198039027185568,2,6,0.1
+Non-Hispanic Asian,Has_Diabetes,Protein,LR,16.2,4.915282290977803,7,22,0.0
+Non-Hispanic Asian,Has_Diabetes,Ever_Smoked,LR,10.0,4.8373546489791295,5,22,0.0
+Non-Hispanic Asian,Has_Diabetes,Smoke_Freq,LR,11.7,2.5317977802344327,6,16,0.0
+Non-Hispanic Asian,Has_Diabetes,Alc_Freq,LR,18.9,2.808914381037628,12,22,0.0
+Non-Hispanic Asian,Has_Diabetes,Alc_Amt,LR,15.6,1.42828568570857,12,17,0.0
+Non-Hispanic Asian,Has_Diabetes,HbA1c,LR,1.2,0.4,1,2,1.0
+Non-Hispanic Asian,Has_Diabetes,Cholesterol,LR,7.9,2.211334438749598,5,13,0.0
+Non-Hispanic Asian,Has_Diabetes,HDL,LR,16.9,4.3920382511995495,9,22,0.0
+Non-Hispanic Asian,Has_Diabetes,Sys_BP,LR,2.0,0.7745966692414834,1,4,0.9
+Non-Hispanic Asian,Has_Diabetes,Dia_BP,LR,4.0,1.2649110640673518,3,7,0.5
+Non-Hispanic Black,Has_Diabetes,Gender,LR,8.3,2.051828452868319,5,12,0.0
+Non-Hispanic Black,Has_Diabetes,Race,LR,23.0,0.0,23,23,0.0
+Non-Hispanic Black,Has_Diabetes,Income_Ratio,LR,14.7,4.561797891182818,10,22,0.0
+Non-Hispanic Black,Has_Diabetes,BMI,LR,6.5,1.746424919657298,4,10,0.0
+Non-Hispanic Black,Has_Diabetes,Mod_Activity,LR,20.2,1.9899748742132397,15,22,0.0
+Non-Hispanic Black,Has_Diabetes,Vig_Activity,LR,16.2,1.661324772583615,14,19,0.0
+Non-Hispanic Black,Has_Diabetes,Calories,LR,13.4,2.3323807579381204,8,16,0.0
+Non-Hispanic Black,Has_Diabetes,Sodium,LR,17.1,3.4481879299133333,11,21,0.0
+Non-Hispanic Black,Has_Diabetes,Carbs,LR,11.4,5.351635264103861,5,21,0.0
+Non-Hispanic Black,Has_Diabetes,Fat,LR,14.2,3.1874754901018454,9,18,0.0
+Non-Hispanic Black,Has_Diabetes,Sat_Fat,LR,11.4,3.7202150475476548,7,19,0.0
+Non-Hispanic Black,Has_Diabetes,Sugar,LR,4.7,2.147091055358389,3,10,0.4
+Non-Hispanic Black,Has_Diabetes,Fiber,LR,19.2,1.9390719429665315,15,22,0.0
+Non-Hispanic Black,Has_Diabetes,Protein,LR,8.8,2.2271057451320084,5,13,0.0
+Non-Hispanic Black,Has_Diabetes,Ever_Smoked,LR,2.1,0.3,2,3,1.0
+Non-Hispanic Black,Has_Diabetes,Smoke_Freq,LR,13.3,3.4942810419312296,8,20,0.0
+Non-Hispanic Black,Has_Diabetes,Alc_Freq,LR,10.9,2.5865034312755126,7,16,0.0
+Non-Hispanic Black,Has_Diabetes,Alc_Amt,LR,16.2,4.331281565541543,8,21,0.0
+Non-Hispanic Black,Has_Diabetes,HbA1c,LR,1.0,0.0,1,1,1.0
+Non-Hispanic Black,Has_Diabetes,Cholesterol,LR,17.7,3.2878564445547194,12,22,0.0
+Non-Hispanic Black,Has_Diabetes,HDL,LR,17.3,3.8483762809787714,12,22,0.0
+Non-Hispanic Black,Has_Diabetes,Sys_BP,LR,3.5,1.02469507659596,2,6,0.6
+Non-Hispanic Black,Has_Diabetes,Dia_BP,LR,4.9,0.8306623862918076,4,6,0.0
+Non-Hispanic White,Has_Diabetes,Gender,LR,18.4,2.4166091947189146,14,22,0.0
+Non-Hispanic White,Has_Diabetes,Race,LR,23.0,0.0,23,23,0.0
+Non-Hispanic White,Has_Diabetes,Income_Ratio,LR,12.0,1.6733200530681511,10,15,0.0
+Non-Hispanic White,Has_Diabetes,BMI,LR,5.2,1.16619037896906,4,8,0.0
+Non-Hispanic White,Has_Diabetes,Mod_Activity,LR,12.3,2.3685438564654024,10,16,0.0
+Non-Hispanic White,Has_Diabetes,Vig_Activity,LR,4.0,2.1908902300206643,2,9,0.5
+Non-Hispanic White,Has_Diabetes,Calories,LR,7.7,5.780138406647371,2,21,0.3
+Non-Hispanic White,Has_Diabetes,Sodium,LR,19.1,2.981610303175115,14,22,0.0
+Non-Hispanic White,Has_Diabetes,Carbs,LR,15.7,4.405678154382138,8,22,0.0
+Non-Hispanic White,Has_Diabetes,Fat,LR,15.4,5.219195340279955,8,22,0.0
+Non-Hispanic White,Has_Diabetes,Sat_Fat,LR,18.0,1.3416407864998738,17,21,0.0
+Non-Hispanic White,Has_Diabetes,Sugar,LR,6.5,1.746424919657298,4,11,0.0
+Non-Hispanic White,Has_Diabetes,Fiber,LR,15.7,2.6851443164195103,11,19,0.0
+Non-Hispanic White,Has_Diabetes,Protein,LR,15.4,3.0397368307141326,10,20,0.0
+Non-Hispanic White,Has_Diabetes,Ever_Smoked,LR,4.6,1.624807680927192,2,7,0.3
+Non-Hispanic White,Has_Diabetes,Smoke_Freq,LR,13.9,2.5865034312755126,9,19,0.0
+Non-Hispanic White,Has_Diabetes,Alc_Freq,LR,20.5,1.8027756377319946,16,22,0.0
+Non-Hispanic White,Has_Diabetes,Alc_Amt,LR,13.1,7.993122043357026,1,20,0.3
+Non-Hispanic White,Has_Diabetes,HbA1c,LR,1.3,0.45825756949558405,1,2,1.0
+Non-Hispanic White,Has_Diabetes,Cholesterol,LR,4.1,1.972308292331602,2,8,0.6
+Non-Hispanic White,Has_Diabetes,HDL,LR,13.1,1.9209372712298547,11,17,0.0
+Non-Hispanic White,Has_Diabetes,Sys_BP,LR,9.2,1.32664991614216,7,12,0.0
+Non-Hispanic White,Has_Diabetes,Dia_BP,LR,7.8,1.4000000000000001,6,11,0.0
+Other Hispanic,Has_Diabetes,Gender,LR,8.7,4.124318125460256,4,18,0.0
+Other Hispanic,Has_Diabetes,Race,LR,23.0,0.0,23,23,0.0
+Other Hispanic,Has_Diabetes,Income_Ratio,LR,18.2,1.7776388834631178,16,21,0.0
+Other Hispanic,Has_Diabetes,BMI,LR,3.7,0.7810249675906654,3,5,0.5
+Other Hispanic,Has_Diabetes,Mod_Activity,LR,19.0,1.0954451150103321,17,21,0.0
+Other Hispanic,Has_Diabetes,Vig_Activity,LR,16.8,7.6131465242697125,2,22,0.2
+Other Hispanic,Has_Diabetes,Calories,LR,11.6,5.180733538795447,3,21,0.1
+Other Hispanic,Has_Diabetes,Sodium,LR,18.5,2.5787593916455256,13,22,0.0
+Other Hispanic,Has_Diabetes,Carbs,LR,10.8,4.686149805543993,3,18,0.1
+Other Hispanic,Has_Diabetes,Fat,LR,8.5,5.5901699437494745,2,18,0.3
+Other Hispanic,Has_Diabetes,Sat_Fat,LR,10.1,4.060788100849391,4,16,0.0
+Other Hispanic,Has_Diabetes,Sugar,LR,16.1,4.1340053217188775,7,22,0.0
+Other Hispanic,Has_Diabetes,Fiber,LR,17.8,2.6758176320519302,14,22,0.0
+Other Hispanic,Has_Diabetes,Protein,LR,17.7,4.980963762164908,6,22,0.0
+Other Hispanic,Has_Diabetes,Ever_Smoked,LR,8.0,3.1937438845342623,2,11,0.2
+Other Hispanic,Has_Diabetes,Smoke_Freq,LR,10.9,4.036087214122113,5,16,0.0
+Other Hispanic,Has_Diabetes,Alc_Freq,LR,11.1,2.3853720883753127,5,14,0.0
+Other Hispanic,Has_Diabetes,Alc_Amt,LR,6.5,5.6258332716140815,2,17,0.6
+Other Hispanic,Has_Diabetes,HbA1c,LR,1.0,0.0,1,1,1.0
+Other Hispanic,Has_Diabetes,Cholesterol,LR,10.9,2.981610303175115,6,16,0.0
+Other Hispanic,Has_Diabetes,HDL,LR,11.0,5.079370039680118,4,20,0.0
+Other Hispanic,Has_Diabetes,Sys_BP,LR,8.3,3.606937759374287,4,15,0.0
+Other Hispanic,Has_Diabetes,Dia_BP,LR,7.8,3.4,4,13,0.0
+Other/Multi-racial,Has_Diabetes,Gender,LR,4.8,1.5999999999999999,3,8,0.3
+Other/Multi-racial,Has_Diabetes,Race,LR,23.0,0.0,23,23,0.0
+Other/Multi-racial,Has_Diabetes,Income_Ratio,LR,18.4,2.1540659228538015,14,22,0.0
+Other/Multi-racial,Has_Diabetes,BMI,LR,18.6,3.32264954516723,13,22,0.0
+Other/Multi-racial,Has_Diabetes,Mod_Activity,LR,4.9,3.3000000000000003,2,12,0.5
+Other/Multi-racial,Has_Diabetes,Vig_Activity,LR,16.2,7.19444229944198,2,22,0.2
+Other/Multi-racial,Has_Diabetes,Calories,LR,12.4,6.019966777316965,4,22,0.0
+Other/Multi-racial,Has_Diabetes,Sodium,LR,10.6,3.8522720568516444,6,19,0.0
+Other/Multi-racial,Has_Diabetes,Carbs,LR,12.0,6.308724118235001,4,22,0.0
+Other/Multi-racial,Has_Diabetes,Fat,LR,6.3,4.62709412050371,2,17,0.3
+Other/Multi-racial,Has_Diabetes,Sat_Fat,LR,11.1,5.430469592954186,3,22,0.1
+Other/Multi-racial,Has_Diabetes,Sugar,LR,15.8,4.621688003316537,6,22,0.0
+Other/Multi-racial,Has_Diabetes,Fiber,LR,14.1,3.645545226711637,9,19,0.0
+Other/Multi-racial,Has_Diabetes,Protein,LR,11.1,5.6471231613982,3,21,0.1
+Other/Multi-racial,Has_Diabetes,Ever_Smoked,LR,6.1,5.974110812497539,2,21,0.5
+Other/Multi-racial,Has_Diabetes,Smoke_Freq,LR,11.8,3.1559467676119,6,16,0.0
+Other/Multi-racial,Has_Diabetes,Alc_Freq,LR,13.7,3.689173349139344,10,20,0.0
+Other/Multi-racial,Has_Diabetes,Alc_Amt,LR,17.3,3.287856444554719,12,22,0.0
+Other/Multi-racial,Has_Diabetes,HbA1c,LR,1.0,0.0,1,1,1.0
+Other/Multi-racial,Has_Diabetes,Cholesterol,LR,9.8,3.515679166249389,6,18,0.0
+Other/Multi-racial,Has_Diabetes,HDL,LR,8.8,1.9899748742132397,6,12,0.0
+Other/Multi-racial,Has_Diabetes,Sys_BP,LR,11.9,4.548626166217664,4,19,0.0
+Other/Multi-racial,Has_Diabetes,Dia_BP,LR,16.3,3.8483762809787714,10,21,0.0
+Mexican American,Has_Hypertension,Gender,LR,18.2,2.4413111231467406,14,22,0.0
+Mexican American,Has_Hypertension,Race,LR,23.0,0.0,23,23,0.0
+Mexican American,Has_Hypertension,Income_Ratio,LR,13.0,3.1937438845342623,10,18,0.0
+Mexican American,Has_Hypertension,BMI,LR,3.5,0.6708203932499369,3,5,0.6
+Mexican American,Has_Hypertension,Mod_Activity,LR,13.2,2.315167380558045,9,18,0.0
+Mexican American,Has_Hypertension,Vig_Activity,LR,18.2,6.4156059729381765,4,22,0.0
+Mexican American,Has_Hypertension,Calories,LR,1.1,0.3,1,2,1.0
+Mexican American,Has_Hypertension,Sodium,LR,5.2,0.8717797887081347,4,7,0.0
+Mexican American,Has_Hypertension,Carbs,LR,14.4,3.52703841770968,7,21,0.0
+Mexican American,Has_Hypertension,Fat,LR,3.6,1.4966629547095764,2,7,0.5
+Mexican American,Has_Hypertension,Sat_Fat,LR,12.9,3.8845849199110063,8,19,0.0
+Mexican American,Has_Hypertension,Sugar,LR,12.1,3.176476034853718,9,20,0.0
+Mexican American,Has_Hypertension,Fiber,LR,11.4,2.8705400188814645,7,16,0.0
+Mexican American,Has_Hypertension,Protein,LR,13.8,3.249615361854384,9,20,0.0
+Mexican American,Has_Hypertension,Ever_Smoked,LR,6.1,0.8306623862918076,5,8,0.0
+Mexican American,Has_Hypertension,Smoke_Freq,LR,19.3,1.676305461424021,15,21,0.0
+Mexican American,Has_Hypertension,Alc_Freq,LR,18.0,2.449489742783178,14,22,0.0
+Mexican American,Has_Hypertension,Alc_Amt,LR,11.1,5.412023651093923,6,22,0.0
+Mexican American,Has_Hypertension,HbA1c,LR,8.1,2.0223748416156684,5,12,0.0
+Mexican American,Has_Hypertension,Cholesterol,LR,11.8,3.340658617698013,8,20,0.0
+Mexican American,Has_Hypertension,HDL,LR,18.7,1.9000000000000001,16,22,0.0
+Mexican American,Has_Hypertension,Sys_BP,LR,2.3,0.7810249675906654,1,4,0.9
+Mexican American,Has_Hypertension,Dia_BP,LR,17.0,2.932575659723036,13,22,0.0
+Non-Hispanic Asian,Has_Hypertension,Gender,LR,12.4,3.261901286060018,8,17,0.0
+Non-Hispanic Asian,Has_Hypertension,Race,LR,23.0,0.0,23,23,0.0
+Non-Hispanic Asian,Has_Hypertension,Income_Ratio,LR,15.3,4.6701177715342475,9,21,0.0
+Non-Hispanic Asian,Has_Hypertension,BMI,LR,2.8,0.7483314773547882,2,4,0.8
+Non-Hispanic Asian,Has_Hypertension,Mod_Activity,LR,11.8,4.331281565541543,2,17,0.1
+Non-Hispanic Asian,Has_Hypertension,Vig_Activity,LR,9.7,3.1638584039112754,7,18,0.0
+Non-Hispanic Asian,Has_Hypertension,Calories,LR,3.1,1.3747727084867523,2,6,0.7
+Non-Hispanic Asian,Has_Hypertension,Sodium,LR,11.3,3.6891733491393435,6,19,0.0
+Non-Hispanic Asian,Has_Hypertension,Carbs,LR,3.9,0.8306623862918074,3,5,0.4
+Non-Hispanic Asian,Has_Hypertension,Fat,LR,12.2,6.04648658313239,5,22,0.0
+Non-Hispanic Asian,Has_Hypertension,Sat_Fat,LR,9.1,4.3920382511995495,4,16,0.0
+Non-Hispanic Asian,Has_Hypertension,Sugar,LR,11.9,4.867237409455183,4,21,0.0
+Non-Hispanic Asian,Has_Hypertension,Fiber,LR,17.2,4.019950248448357,8,22,0.0
+Non-Hispanic Asian,Has_Hypertension,Protein,LR,14.6,4.608687448721165,7,22,0.0
+Non-Hispanic Asian,Has_Hypertension,Ever_Smoked,LR,18.9,3.477067730142742,9,22,0.0
+Non-Hispanic Asian,Has_Hypertension,Smoke_Freq,LR,14.5,2.9748949561287032,10,20,0.0
+Non-Hispanic Asian,Has_Hypertension,Alc_Freq,LR,19.7,2.0518284528683193,15,22,0.0
+Non-Hispanic Asian,Has_Hypertension,Alc_Amt,LR,11.4,4.2708313008125245,7,22,0.0
+Non-Hispanic Asian,Has_Hypertension,HbA1c,LR,5.4,0.9165151389911681,4,7,0.0
+Non-Hispanic Asian,Has_Hypertension,Cholesterol,LR,14.0,3.4641016151377544,9,19,0.0
+Non-Hispanic Asian,Has_Hypertension,HDL,LR,19.6,2.244994432064365,15,22,0.0
+Non-Hispanic Asian,Has_Hypertension,Sys_BP,LR,1.0,0.0,1,1,1.0
+Non-Hispanic Asian,Has_Hypertension,Dia_BP,LR,13.2,2.2271057451320084,10,17,0.0
+Non-Hispanic Black,Has_Hypertension,Gender,LR,7.5,1.857417562100671,4,11,0.0
+Non-Hispanic Black,Has_Hypertension,Race,LR,23.0,0.0,23,23,0.0
+Non-Hispanic Black,Has_Hypertension,Income_Ratio,LR,12.5,2.4596747752497685,9,17,0.0
+Non-Hispanic Black,Has_Hypertension,BMI,LR,3.2,0.8717797887081347,2,5,0.7
+Non-Hispanic Black,Has_Hypertension,Mod_Activity,LR,7.8,2.1354156504062622,5,11,0.0
+Non-Hispanic Black,Has_Hypertension,Vig_Activity,LR,20.7,2.4103941586387903,14,22,0.0
+Non-Hispanic Black,Has_Hypertension,Calories,LR,12.9,6.7446274915669,3,21,0.2
+Non-Hispanic Black,Has_Hypertension,Sodium,LR,8.1,1.1357816691600546,6,10,0.0
+Non-Hispanic Black,Has_Hypertension,Carbs,LR,6.4,5.4258639865002145,2,21,0.3
+Non-Hispanic Black,Has_Hypertension,Fat,LR,13.9,4.109744517606904,7,21,0.0
+Non-Hispanic Black,Has_Hypertension,Sat_Fat,LR,17.3,3.8742741255621036,9,22,0.0
+Non-Hispanic Black,Has_Hypertension,Sugar,LR,8.1,2.1656407827707715,5,12,0.0
+Non-Hispanic Black,Has_Hypertension,Fiber,LR,12.7,2.9,7,19,0.0
+Non-Hispanic Black,Has_Hypertension,Protein,LR,18.1,4.437341546466758,7,22,0.0
+Non-Hispanic Black,Has_Hypertension,Ever_Smoked,LR,2.6,0.8,2,4,0.8
+Non-Hispanic Black,Has_Hypertension,Smoke_Freq,LR,15.2,2.0396078054371136,13,20,0.0
+Non-Hispanic Black,Has_Hypertension,Alc_Freq,LR,19.0,1.8439088914585775,16,22,0.0
+Non-Hispanic Black,Has_Hypertension,Alc_Amt,LR,17.4,1.7435595774162695,15,20,0.0
+Non-Hispanic Black,Has_Hypertension,HbA1c,LR,5.3,0.9,4,7,0.0
+Non-Hispanic Black,Has_Hypertension,Cholesterol,LR,17.3,2.0518284528683193,13,20,0.0
+Non-Hispanic Black,Has_Hypertension,HDL,LR,11.9,2.1656407827707715,10,16,0.0
+Non-Hispanic Black,Has_Hypertension,Sys_BP,LR,1.0,0.0,1,1,1.0
+Non-Hispanic Black,Has_Hypertension,Dia_BP,LR,14.1,3.1764760348537187,10,19,0.0
+Non-Hispanic White,Has_Hypertension,Gender,LR,19.0,1.6733200530681511,17,22,0.0
+Non-Hispanic White,Has_Hypertension,Race,LR,23.0,0.0,23,23,0.0
+Non-Hispanic White,Has_Hypertension,Income_Ratio,LR,18.5,1.6881943016134133,16,22,0.0
+Non-Hispanic White,Has_Hypertension,BMI,LR,2.0,0.0,2,2,1.0
+Non-Hispanic White,Has_Hypertension,Mod_Activity,LR,15.4,2.0099751242241783,13,21,0.0
+Non-Hispanic White,Has_Hypertension,Vig_Activity,LR,18.4,4.2708313008125245,9,21,0.0
+Non-Hispanic White,Has_Hypertension,Calories,LR,3.4,0.48989794855663565,3,4,0.6
+Non-Hispanic White,Has_Hypertension,Sodium,LR,16.7,2.685144316419511,13,22,0.0
+Non-Hispanic White,Has_Hypertension,Carbs,LR,5.5,0.6708203932499369,4,6,0.0
+Non-Hispanic White,Has_Hypertension,Fat,LR,9.3,1.1,7,11,0.0
+Non-Hispanic White,Has_Hypertension,Sat_Fat,LR,19.2,1.8867962264113207,16,22,0.0
+Non-Hispanic White,Has_Hypertension,Sugar,LR,12.3,1.9000000000000001,10,17,0.0
+Non-Hispanic White,Has_Hypertension,Fiber,LR,16.1,3.269556544854363,11,22,0.0
+Non-Hispanic White,Has_Hypertension,Protein,LR,9.3,1.1874342087037917,7,12,0.0
+Non-Hispanic White,Has_Hypertension,Ever_Smoked,LR,3.8,0.7483314773547882,3,5,0.4
+Non-Hispanic White,Has_Hypertension,Smoke_Freq,LR,13.7,2.5317977802344327,11,20,0.0
+Non-Hispanic White,Has_Hypertension,Alc_Freq,LR,15.6,2.3748684174075834,12,19,0.0
+Non-Hispanic White,Has_Hypertension,Alc_Amt,LR,20.0,2.4083189157584592,16,22,0.0
+Non-Hispanic White,Has_Hypertension,HbA1c,LR,5.3,0.6403124237432849,4,6,0.0
+Non-Hispanic White,Has_Hypertension,Cholesterol,LR,7.5,0.5,7,8,0.0
+Non-Hispanic White,Has_Hypertension,HDL,LR,12.7,1.1874342087037917,11,15,0.0
+Non-Hispanic White,Has_Hypertension,Sys_BP,LR,1.0,0.0,1,1,1.0
+Non-Hispanic White,Has_Hypertension,Dia_BP,LR,8.3,1.1874342087037917,7,10,0.0
+Other Hispanic,Has_Hypertension,Gender,LR,14.0,2.32379000772445,11,18,0.0
+Other Hispanic,Has_Hypertension,Race,LR,23.0,0.0,23,23,0.0
+Other Hispanic,Has_Hypertension,Income_Ratio,LR,19.3,2.193171219946131,15,22,0.0
+Other Hispanic,Has_Hypertension,BMI,LR,2.8,0.6,2,4,0.9
+Other Hispanic,Has_Hypertension,Mod_Activity,LR,9.8,1.4,7,12,0.0
+Other Hispanic,Has_Hypertension,Vig_Activity,LR,13.9,3.8587562763149474,4,20,0.0
+Other Hispanic,Has_Hypertension,Calories,LR,4.1,1.8681541692269403,1,8,0.4
+Other Hispanic,Has_Hypertension,Sodium,LR,14.7,3.661966684720111,9,20,0.0
+Other Hispanic,Has_Hypertension,Carbs,LR,8.5,3.138470965295043,5,17,0.0
+Other Hispanic,Has_Hypertension,Fat,LR,15.5,4.006245124802026,9,22,0.0
+Other Hispanic,Has_Hypertension,Sat_Fat,LR,12.7,4.220189569201838,7,20,0.0
+Other Hispanic,Has_Hypertension,Sugar,LR,15.7,4.001249804748512,9,22,0.0
+Other Hispanic,Has_Hypertension,Fiber,LR,18.3,3.8483762809787714,11,22,0.0
+Other Hispanic,Has_Hypertension,Protein,LR,7.9,2.8442925306655784,6,16,0.0
+Other Hispanic,Has_Hypertension,Ever_Smoked,LR,4.6,1.42828568570857,1,6,0.1
+Other Hispanic,Has_Hypertension,Smoke_Freq,LR,18.6,3.411744421846396,10,22,0.0
+Other Hispanic,Has_Hypertension,Alc_Freq,LR,9.7,1.9519221295943134,7,14,0.0
+Other Hispanic,Has_Hypertension,Alc_Amt,LR,8.3,5.9,2,19,0.3
+Other Hispanic,Has_Hypertension,HbA1c,LR,4.0,1.3416407864998738,2,6,0.3
+Other Hispanic,Has_Hypertension,Cholesterol,LR,17.3,2.72213151776324,13,22,0.0
+Other Hispanic,Has_Hypertension,HDL,LR,16.8,3.7629775444453557,12,22,0.0
+Other Hispanic,Has_Hypertension,Sys_BP,LR,1.2,0.4,1,2,1.0
+Other Hispanic,Has_Hypertension,Dia_BP,LR,15.3,3.606937759374287,9,21,0.0
+Other/Multi-racial,Has_Hypertension,Gender,LR,15.4,2.4166091947189146,11,19,0.0
+Other/Multi-racial,Has_Hypertension,Race,LR,23.0,0.0,23,23,0.0
+Other/Multi-racial,Has_Hypertension,Income_Ratio,LR,18.1,2.7730849247724096,13,22,0.0
+Other/Multi-racial,Has_Hypertension,BMI,LR,2.2,0.6,1,3,1.0
+Other/Multi-racial,Has_Hypertension,Mod_Activity,LR,15.1,2.3430749027719964,11,19,0.0
+Other/Multi-racial,Has_Hypertension,Vig_Activity,LR,19.2,1.7776388834631176,16,21,0.0
+Other/Multi-racial,Has_Hypertension,Calories,LR,6.2,2.7129319932501073,3,12,0.2
+Other/Multi-racial,Has_Hypertension,Sodium,LR,14.2,4.6,4,20,0.0
+Other/Multi-racial,Has_Hypertension,Carbs,LR,4.8,1.7776388834631178,1,7,0.2
+Other/Multi-racial,Has_Hypertension,Fat,LR,5.1,2.022374841615669,1,9,0.2
+Other/Multi-racial,Has_Hypertension,Sat_Fat,LR,10.1,3.8587562763149474,5,19,0.0
+Other/Multi-racial,Has_Hypertension,Sugar,LR,18.3,2.8301943396169813,14,22,0.0
+Other/Multi-racial,Has_Hypertension,Fiber,LR,9.8,2.6,7,15,0.0
+Other/Multi-racial,Has_Hypertension,Protein,LR,10.8,1.5362291495737217,9,13,0.0
+Other/Multi-racial,Has_Hypertension,Ever_Smoked,LR,6.6,2.3748684174075834,4,11,0.0
+Other/Multi-racial,Has_Hypertension,Smoke_Freq,LR,14.9,4.346262762420146,11,22,0.0
+Other/Multi-racial,Has_Hypertension,Alc_Freq,LR,10.0,2.32379000772445,7,15,0.0
+Other/Multi-racial,Has_Hypertension,Alc_Amt,LR,11.0,2.6457513110645907,7,15,0.0
+Other/Multi-racial,Has_Hypertension,HbA1c,LR,4.1,1.445683229480096,2,6,0.4
+Other/Multi-racial,Has_Hypertension,Cholesterol,LR,16.6,2.5377155080899043,13,22,0.0
+Other/Multi-racial,Has_Hypertension,HDL,LR,18.5,2.0615528128088303,16,22,0.0
+Other/Multi-racial,Has_Hypertension,Sys_BP,LR,1.4,0.66332495807108,1,3,1.0
+Other/Multi-racial,Has_Hypertension,Dia_BP,LR,20.6,1.42828568570857,18,22,0.0

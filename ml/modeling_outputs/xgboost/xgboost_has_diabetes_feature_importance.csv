@@ -1,0 +1,139 @@
+Feature,Importance,Target,Group,Model,Importance_Normalized,Rank
+RIAGENDR,0.021952076,Has_Diabetes,Mexican American,XGBoost,0.021952078,16
+RIDRETH3,0.0,Has_Diabetes,Mexican American,XGBoost,0.0,23
+INDFMPIR,0.020608595,Has_Diabetes,Mexican American,XGBoost,0.020608597,17
+BMXBMI,0.09183748,Has_Diabetes,Mexican American,XGBoost,0.09183749,2
+PAD680,0.026676172,Has_Diabetes,Mexican American,XGBoost,0.026676174,13
+PAD800,0.01843831,Has_Diabetes,Mexican American,XGBoost,0.018438311,19
+DR1TKCAL,0.031556543,Has_Diabetes,Mexican American,XGBoost,0.031556547,10
+DR1TSODI,0.027846707,Has_Diabetes,Mexican American,XGBoost,0.027846709,11
+DR1TCARB,0.033745795,Has_Diabetes,Mexican American,XGBoost,0.0337458,9
+DR1TTFAT,0.02008908,Has_Diabetes,Mexican American,XGBoost,0.020089082,18
+DR1TSFAT,0.010490176,Has_Diabetes,Mexican American,XGBoost,0.010490177,22
+DR1TSUGR,0.08679627,Has_Diabetes,Mexican American,XGBoost,0.086796276,3
+DR1TFIBE,0.026842274,Has_Diabetes,Mexican American,XGBoost,0.026842276,12
+DR1TPROT,0.011056765,Has_Diabetes,Mexican American,XGBoost,0.011056766,20
+SMQ020,0.026623227,Has_Diabetes,Mexican American,XGBoost,0.026623229,14
+SMQ040,0.010860527,Has_Diabetes,Mexican American,XGBoost,0.010860528,21
+ALQ121,0.036449436,Has_Diabetes,Mexican American,XGBoost,0.03644944,8
+ALQ130,0.07505267,Has_Diabetes,Mexican American,XGBoost,0.07505268,4
+LBXGH,0.24884857,Has_Diabetes,Mexican American,XGBoost,0.24884859,1
+LBXTC,0.06872478,Has_Diabetes,Mexican American,XGBoost,0.06872479,5
+LBDHDD,0.0232364,Has_Diabetes,Mexican American,XGBoost,0.023236401,15
+BPXOSY1,0.040099934,Has_Diabetes,Mexican American,XGBoost,0.040099937,7
+BPXODI1,0.042168163,Has_Diabetes,Mexican American,XGBoost,0.042168166,6
+RIAGENDR,0.008758793,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.008758794,21
+RIDRETH3,0.0,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.0,23
+INDFMPIR,0.027700773,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.027700774,10
+BMXBMI,0.04760175,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.047601752,8
+PAD680,0.024509069,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.02450907,13
+PAD800,0.011538039,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.01153804,19
+DR1TKCAL,0.064320944,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.06432095,4
+DR1TSODI,0.01644858,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.016448582,18
+DR1TCARB,0.011225968,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.011225969,20
+DR1TTFAT,0.026945412,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.026945414,12
+DR1TSFAT,0.08502462,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.085024625,3
+DR1TSUGR,0.116560385,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.11656039,2
+DR1TFIBE,0.05806241,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.058062416,7
+DR1TPROT,0.062680244,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.06268025,5
+SMQ020,0.018357377,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.01835738,17
+SMQ040,0.02331867,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.023318673,16
+ALQ121,0.029654967,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.029654969,9
+ALQ130,0.005394154,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.0053941547,22
+LBXGH,0.22813469,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.2281347,1
+LBXTC,0.027164916,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.027164917,11
+LBDHDD,0.023632227,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.023632228,15
+BPXOSY1,0.023985345,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.023985347,14
+BPXODI1,0.05898067,Has_Diabetes,Non-Hispanic Asian,XGBoost,0.058980674,6
+RIAGENDR,0.016057007,Has_Diabetes,Non-Hispanic Black,XGBoost,0.016057009,22
+RIDRETH3,0.0,Has_Diabetes,Non-Hispanic Black,XGBoost,0.0,23
+INDFMPIR,0.017168099,Has_Diabetes,Non-Hispanic Black,XGBoost,0.0171681,21
+BMXBMI,0.03435687,Has_Diabetes,Non-Hispanic Black,XGBoost,0.034356873,10
+PAD680,0.027045447,Has_Diabetes,Non-Hispanic Black,XGBoost,0.02704545,15
+PAD800,0.030344842,Has_Diabetes,Non-Hispanic Black,XGBoost,0.030344844,13
+DR1TKCAL,0.032442775,Has_Diabetes,Non-Hispanic Black,XGBoost,0.03244278,11
+DR1TSODI,0.026382562,Has_Diabetes,Non-Hispanic Black,XGBoost,0.026382564,16
+DR1TCARB,0.041129325,Has_Diabetes,Non-Hispanic Black,XGBoost,0.04112933,5
+DR1TTFAT,0.023574408,Has_Diabetes,Non-Hispanic Black,XGBoost,0.02357441,20
+DR1TSFAT,0.025554726,Has_Diabetes,Non-Hispanic Black,XGBoost,0.025554728,17
+DR1TSUGR,0.06561466,Has_Diabetes,Non-Hispanic Black,XGBoost,0.06561467,4
+DR1TFIBE,0.028830932,Has_Diabetes,Non-Hispanic Black,XGBoost,0.028830934,14
+DR1TPROT,0.031373385,Has_Diabetes,Non-Hispanic Black,XGBoost,0.03137339,12
+SMQ020,0.09854929,Has_Diabetes,Non-Hispanic Black,XGBoost,0.0985493,2
+SMQ040,0.023747217,Has_Diabetes,Non-Hispanic Black,XGBoost,0.023747219,19
+ALQ121,0.0364564,Has_Diabetes,Non-Hispanic Black,XGBoost,0.036456402,7
+ALQ130,0.06719762,Has_Diabetes,Non-Hispanic Black,XGBoost,0.06719763,3
+LBXGH,0.24132358,Has_Diabetes,Non-Hispanic Black,XGBoost,0.24132359,1
+LBXTC,0.036165286,Has_Diabetes,Non-Hispanic Black,XGBoost,0.03616529,8
+LBDHDD,0.03501173,Has_Diabetes,Non-Hispanic Black,XGBoost,0.035011735,9
+BPXOSY1,0.03742637,Has_Diabetes,Non-Hispanic Black,XGBoost,0.037426375,6
+BPXODI1,0.024247402,Has_Diabetes,Non-Hispanic Black,XGBoost,0.024247404,18
+RIAGENDR,0.01873413,Has_Diabetes,Non-Hispanic White,XGBoost,0.01873413,22
+RIDRETH3,0.0,Has_Diabetes,Non-Hispanic White,XGBoost,0.0,23
+INDFMPIR,0.024056427,Has_Diabetes,Non-Hispanic White,XGBoost,0.024056427,17
+BMXBMI,0.08654388,Has_Diabetes,Non-Hispanic White,XGBoost,0.08654388,2
+PAD680,0.039895475,Has_Diabetes,Non-Hispanic White,XGBoost,0.039895475,5
+PAD800,0.02717959,Has_Diabetes,Non-Hispanic White,XGBoost,0.02717959,13
+DR1TKCAL,0.029003209,Has_Diabetes,Non-Hispanic White,XGBoost,0.029003209,10
+DR1TSODI,0.023833556,Has_Diabetes,Non-Hispanic White,XGBoost,0.023833556,18
+DR1TCARB,0.024585363,Has_Diabetes,Non-Hispanic White,XGBoost,0.024585363,16
+DR1TTFAT,0.020539362,Has_Diabetes,Non-Hispanic White,XGBoost,0.020539362,21
+DR1TSFAT,0.03260621,Has_Diabetes,Non-Hispanic White,XGBoost,0.03260621,7
+DR1TSUGR,0.024772687,Has_Diabetes,Non-Hispanic White,XGBoost,0.024772687,15
+DR1TFIBE,0.021563953,Has_Diabetes,Non-Hispanic White,XGBoost,0.021563953,20
+DR1TPROT,0.028416019,Has_Diabetes,Non-Hispanic White,XGBoost,0.028416019,11
+SMQ020,0.049090486,Has_Diabetes,Non-Hispanic White,XGBoost,0.049090486,4
+SMQ040,0.022976443,Has_Diabetes,Non-Hispanic White,XGBoost,0.022976443,19
+ALQ121,0.027943261,Has_Diabetes,Non-Hispanic White,XGBoost,0.027943261,12
+ALQ130,0.027158499,Has_Diabetes,Non-Hispanic White,XGBoost,0.027158499,14
+LBXGH,0.32565698,Has_Diabetes,Non-Hispanic White,XGBoost,0.32565698,1
+LBXTC,0.050438583,Has_Diabetes,Non-Hispanic White,XGBoost,0.050438583,3
+LBDHDD,0.029342357,Has_Diabetes,Non-Hispanic White,XGBoost,0.029342357,9
+BPXOSY1,0.03337035,Has_Diabetes,Non-Hispanic White,XGBoost,0.03337035,6
+BPXODI1,0.03229319,Has_Diabetes,Non-Hispanic White,XGBoost,0.03229319,8
+RIAGENDR,0.014745754,Has_Diabetes,Other Hispanic,XGBoost,0.014745754,20
+RIDRETH3,0.0,Has_Diabetes,Other Hispanic,XGBoost,0.0,23
+INDFMPIR,0.012933932,Has_Diabetes,Other Hispanic,XGBoost,0.012933932,22
+BMXBMI,0.048745155,Has_Diabetes,Other Hispanic,XGBoost,0.048745155,6
+PAD680,0.022353752,Has_Diabetes,Other Hispanic,XGBoost,0.022353752,17
+PAD800,0.026076999,Has_Diabetes,Other Hispanic,XGBoost,0.026076999,13
+DR1TKCAL,0.08186215,Has_Diabetes,Other Hispanic,XGBoost,0.08186215,2
+DR1TSODI,0.023507671,Has_Diabetes,Other Hispanic,XGBoost,0.023507671,15
+DR1TCARB,0.022965126,Has_Diabetes,Other Hispanic,XGBoost,0.022965126,16
+DR1TTFAT,0.02024929,Has_Diabetes,Other Hispanic,XGBoost,0.02024929,18
+DR1TSFAT,0.033670302,Has_Diabetes,Other Hispanic,XGBoost,0.033670302,9
+DR1TSUGR,0.017925652,Has_Diabetes,Other Hispanic,XGBoost,0.017925652,19
+DR1TFIBE,0.028595554,Has_Diabetes,Other Hispanic,XGBoost,0.028595554,12
+DR1TPROT,0.034826778,Has_Diabetes,Other Hispanic,XGBoost,0.034826778,8
+SMQ020,0.040776744,Has_Diabetes,Other Hispanic,XGBoost,0.040776744,7
+SMQ040,0.013021249,Has_Diabetes,Other Hispanic,XGBoost,0.013021249,21
+ALQ121,0.057281572,Has_Diabetes,Other Hispanic,XGBoost,0.057281572,4
+ALQ130,0.061810005,Has_Diabetes,Other Hispanic,XGBoost,0.061810005,3
+LBXGH,0.29958528,Has_Diabetes,Other Hispanic,XGBoost,0.29958528,1
+LBXTC,0.052490883,Has_Diabetes,Other Hispanic,XGBoost,0.052490883,5
+LBDHDD,0.03024987,Has_Diabetes,Other Hispanic,XGBoost,0.03024987,11
+BPXOSY1,0.02570311,Has_Diabetes,Other Hispanic,XGBoost,0.02570311,14
+BPXODI1,0.03062318,Has_Diabetes,Other Hispanic,XGBoost,0.03062318,10
+RIAGENDR,0.016246988,Has_Diabetes,Other/Multi-racial,XGBoost,0.016246988,18
+RIDRETH3,0.0,Has_Diabetes,Other/Multi-racial,XGBoost,0.0,23
+INDFMPIR,0.010228283,Has_Diabetes,Other/Multi-racial,XGBoost,0.010228283,21
+BMXBMI,0.030780185,Has_Diabetes,Other/Multi-racial,XGBoost,0.030780185,8
+PAD680,0.01732467,Has_Diabetes,Other/Multi-racial,XGBoost,0.01732467,16
+PAD800,0.029586053,Has_Diabetes,Other/Multi-racial,XGBoost,0.029586053,11
+DR1TKCAL,0.022641402,Has_Diabetes,Other/Multi-racial,XGBoost,0.022641402,15
+DR1TSODI,0.03835706,Has_Diabetes,Other/Multi-racial,XGBoost,0.03835706,6
+DR1TCARB,0.05018508,Has_Diabetes,Other/Multi-racial,XGBoost,0.05018508,4
+DR1TTFAT,0.016522165,Has_Diabetes,Other/Multi-racial,XGBoost,0.016522165,17
+DR1TSFAT,0.026313506,Has_Diabetes,Other/Multi-racial,XGBoost,0.026313506,14
+DR1TSUGR,0.016139878,Has_Diabetes,Other/Multi-racial,XGBoost,0.016139878,19
+DR1TFIBE,0.012278671,Has_Diabetes,Other/Multi-racial,XGBoost,0.012278671,20
+DR1TPROT,0.06132037,Has_Diabetes,Other/Multi-racial,XGBoost,0.06132037,3
+SMQ020,0.034343597,Has_Diabetes,Other/Multi-racial,XGBoost,0.034343597,7
+SMQ040,0.0046097827,Has_Diabetes,Other/Multi-racial,XGBoost,0.0046097827,22
+ALQ121,0.029549174,Has_Diabetes,Other/Multi-racial,XGBoost,0.029549174,12
+ALQ130,0.18156895,Has_Diabetes,Other/Multi-racial,XGBoost,0.18156895,2
+LBXGH,0.27444208,Has_Diabetes,Other/Multi-racial,XGBoost,0.27444208,1
+LBXTC,0.030700175,Has_Diabetes,Other/Multi-racial,XGBoost,0.030700175,9
+LBDHDD,0.029961253,Has_Diabetes,Other/Multi-racial,XGBoost,0.029961253,10
+BPXOSY1,0.026960596,Has_Diabetes,Other/Multi-racial,XGBoost,0.026960596,13
+BPXODI1,0.039940093,Has_Diabetes,Other/Multi-racial,XGBoost,0.039940093,5
